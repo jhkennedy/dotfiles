@@ -10,3 +10,5 @@ perms = 0
 # cread a common file to add any added prefs to (from gui)
 addprefsto = pc0101123.gui
 
+# ignore code dir as all should be synced via github or jhkennedy.org
+ignore = Path Code
