@@ -12,3 +12,6 @@ addprefsto = pc0101123.gui
 
 # ignore code dir as all should be synced via github or jhkennedy.org
 ignore = Path Code
+
+# ignore library as it is synced via mendeley
+ignore = Path Library
