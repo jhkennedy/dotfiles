@@ -1,0 +1,12 @@
+# Unison preferences
+label = ORNL workstation
+root = /home/fjk/Documents
+root = ssh://fjk@pc0101123.ornl.gov/Documents
+sshargs = -C
+
+# ignore file permission
+perms = 0
+
+# cread a common file to add any added prefs to (from gui)
+addprefsto = pc0101123.gui
+
