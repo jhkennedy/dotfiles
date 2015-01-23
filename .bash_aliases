@@ -16,7 +16,8 @@ alias godata='cd ~/Documents/Data'
 
 alias gocism='cd ~/Documents/Code/CISM'
 alias devcism='cd ~/Documents/Code/cism-dev'
-alias buildcism='cd ~/Documents/Code/cism-dev/builds/linux-gnu-cism'
+alias buildcism='cd ~/Documents/Code/cism-dev/builds/ubuntu-1404-cism'
+alias testcism='cd ~/Documents/Code/cism-dev/tests'
 
 alias makepdf='./makepdf'
 
