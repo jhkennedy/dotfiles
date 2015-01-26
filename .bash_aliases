@@ -1,3 +1,6 @@
+# grey background for the command prompt
+export PS1="\e[44m\u@\h \W$ \e[m"
+
 # function to open pdfs quietly. 
 function pdfo () {
 	evince "$1" 2>/dev/null & 
