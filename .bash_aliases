@@ -1,10 +1,10 @@
-# link this file to ~/.bash_aliases
-
+# function to open pdfs quietly. 
 function pdfo () {
 	evince "$1" 2>/dev/null & 
 }
 complete -f -o plusdirs -X '!*.pdf' pdfo
 
+# function to run a command quietly
 function nullit () {
 	"$1" "$2" 2>/dev/null &
 }
@@ -18,6 +18,8 @@ alias gocism='cd ~/Documents/Code/CISM'
 alias devcism='cd ~/Documents/Code/cism-dev'
 alias buildcism='cd ~/Documents/Code/cism-dev/builds/ubuntu-1404-cism'
 alias testcism='cd ~/Documents/Code/cism-dev/tests'
+
+alias golivv='cd ~/Documents/Code/LIVV'
 
 alias makepdf='./makepdf'
 
