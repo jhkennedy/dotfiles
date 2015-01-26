@@ -1,5 +1,5 @@
 # grey background for the command prompt
-export PS1="\e[44m\u@\h \W$ \e[m"
+export PS1="\e[44m\u@\h \w$ \e[m"
 
 # function to open pdfs quietly. 
 function pdfo () {
