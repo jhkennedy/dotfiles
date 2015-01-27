@@ -148,8 +148,8 @@ sudo apt-get autoremove
 #
 #
 # Software to build (see notes above):
-# PETSc                     -
-# PISM                      -
+# PETSc                     X
+# PISM                      X
 # Trilinos                  X
 # CISM                      X
 #

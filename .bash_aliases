@@ -17,6 +17,14 @@ alias gowrite='cd ~/Documents/Writing'
 alias gocode='cd ~/Documents/Code'
 alias godata='cd ~/Documents/Data'
 
+alias makepdf='./makepdf'
+
+alias make='make -j 3'
+
+# FEvoR
+alias gofevor='cd ~/Documents/Code/fevor'
+
+# CISM
 alias gocism='cd ~/Documents/Code/CISM'
 alias devcism='cd ~/Documents/Code/cism-dev'
 alias buildcism='cd ~/Documents/Code/cism-dev/builds/ubuntu-1404-cism'
@@ -24,16 +32,11 @@ alias testcism='cd ~/Documents/Code/cism-dev/tests'
 
 alias golivv='cd ~/Documents/Code/LIVV'
 
-alias gopism='cd ~/Documents/Code/pism'
-
-alias makepdf='./makepdf'
-
-alias make='make -j 3'
-
-# CISM Variables
 export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
 
-# PISM Variables
+# PISM
+alias gopism='cd ~/Documents/Code/pism'
+
 export PETSC_DIR='/home/fjk/Documents/Code/petsc-3.4.5'
 export PETSC_ARCH='linux_gnu_opt'
 export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
