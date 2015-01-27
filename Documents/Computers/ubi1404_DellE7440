@@ -128,6 +128,12 @@ sudo apt-get install -y my-weather-indicator
 #
 sudo apt-get install -y indicator-multiload
 #
+# Skype
+#sudo dpkg --add-architecture i386
+#sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+#sudo apt-get update && sudo apt-get install skype
+    # UNTESTED
+#
 #
 # Fitbit sync
 # sudo apt-get isntall -y python-usb python-requests
@@ -146,7 +152,6 @@ sudo apt-get autoremove
 # CISM                      X
 #
 # Other things to Install:
-#    Skype                  -
 #    Mendeley               X
 #    GoogleChrome           X
 #    GoogleEarth            X
