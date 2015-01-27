@@ -12,14 +12,21 @@ function nullit () {
 	"$1" "$2" 2>/dev/null &
 }
 
-alias gopapers='cd ~/Documents/Writing/Papers'
+
+# Writing
 alias gowrite='cd ~/Documents/Writing'
-alias gocode='cd ~/Documents/Code'
-alias godata='cd ~/Documents/Data'
+alias gopapers='cd ~/Documents/Writing/Papers'
+alias gothesis='cd ~/Documents/Writing/Thesis/Dissertation'
 
 alias makepdf='./makepdf'
 
+
+# Coding
+alias gocode='cd ~/Documents/Code'
 alias make='make -j 3'
+
+# Data
+alias godata='cd ~/Documents/Data'
 
 # FEvoR
 alias gofevor='cd ~/Documents/Code/fevor'
