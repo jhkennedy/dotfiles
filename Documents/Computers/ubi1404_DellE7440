@@ -23,7 +23,6 @@ sudo apt-get install -y ppa-purge unity-tweak-tool
 # Media stuff
 sudo apt-get install -y ttf-liberation flashplugin-installer
 sudo apt-get install -y ubuntu-restricted-addons ubuntu-restricted-extras
-sudo apt-get install -y skype
 sudo apt-get install -y synergy
 #
 # prorgraming stuff
@@ -46,7 +45,7 @@ sudo apt-get install -y libboost-all-dev libboost-doc
 sudo apt-get install -y libcgal-dev
     # CGAL libraries: http://doc.cgal.org/
 # Science stuff
-sudo apt-get install -y gnuplot units graphvis
+sudo apt-get install -y gnuplot units graphviZ
     # units is a comand line unit converter
 # GMT Generic Mapping tools -- build from source
 sudo apt-get install -y libgdal1-dev libfftw3-dev libpcre3-dev GraphicsMagick subversion
@@ -147,6 +146,7 @@ sudo apt-get autoremove
 # CISM                      X
 #
 # Other things to Install:
+#    Skype                  -
 #    Mendeley               X
 #    GoogleChrome           X
 #    GoogleEarth            X

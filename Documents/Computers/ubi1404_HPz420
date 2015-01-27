@@ -29,7 +29,6 @@ sudo apt-get install -y ppa-purge unity-tweak-tool
 # Media stuff
 sudo apt-get install -y ttf-liberation flashplugin-installer
 sudo apt-get install -y ubuntu-restricted-addons ubuntu-restricted-extras
-sudo apt-get install -y skype
 sudo apt-get install -y synergy
 #
 # prorgraming stuff
@@ -53,7 +52,9 @@ sudo apt-get install -y libboost-all-dev libboost-doc
 sudo apt-get install -y libcgal-dev
     # CGAL libraries: http://doc.cgal.org/
 # Science stuff
-sudo apt-get install -y gnuplot units graphvis
+echo "GNUPLOTS"
+sudo apt-get install -y gnuplot units graphviz
+echo "DONE GNUPLOTS"
     # units is a comand line unit converter
 sudo apt-get install -y ferret-vis ncl-ncarg
 sudo ln -s /usr/share/ncarg /usr/lib/ncarg
