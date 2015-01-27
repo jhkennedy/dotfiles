@@ -24,9 +24,18 @@ alias testcism='cd ~/Documents/Code/cism-dev/tests'
 
 alias golivv='cd ~/Documents/Code/LIVV'
 
+alias gopism='cd ~/Documents/Code/pism'
+
 alias makepdf='./makepdf'
 
 alias make='make -j 3'
 
 # CISM Variables
 export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
+
+# PISM Variables
+export PETSC_DIR='/home/fjk/Documents/Code/petsc-3.4.5'
+export PETSC_ARCH='linux_gnu_opt'
+export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
+
+export PATH=~/pism-dev/bin:$PATH
