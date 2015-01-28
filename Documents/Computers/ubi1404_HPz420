@@ -60,11 +60,10 @@ echo "GNUPLOTS"
 sudo apt-get install -y gnuplot units graphviz
 echo "DONE GNUPLOTS"
     # units is a comand line unit converter
-sudo apt-get install -y ferret-vis ncl-ncarg
-sudo ln -s /usr/share/ncarg /usr/lib/ncarg
-    # this fixes a bug in NCL, fixed in NCL 6.2.0.1ubuntu1
-    # test first with:
-    #ng4ex gsun01n -clean
+# NCL
+sudo apt-get install -y ferret-vis libbz2-dev libcairo2-dev xorg-dev
+    # will need to install ncl-ncarg from source for 14.04
+    # bug has been fixed for 14.10 and later.
 sudo apt-get install -y octave
 sudo apt-get install -y texlive-full bibtex2html latexdiff diffpdf perl-doc
 sudo apt-get install -y autotrace engauge-digitizer # for digitizing plots
@@ -153,6 +152,7 @@ sudo apt-get autoremove
 #
 #
 # Software to build (see notes above):
+# NCL-NCARG                 X
 # PETSc                     X
 # PISM                      X
 # Trilinos                  X

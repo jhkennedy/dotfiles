@@ -37,6 +37,10 @@ alias godata='cd ~/Documents/Data'
 # FEvoR
 alias gofevor='cd ~/Documents/Code/fevor'
 
+# NCL
+export NCARG_ROOT='/usr/local/ncl-6.1.2'
+export PATH=$NCARG_ROOT/bin:$PATH
+
 # CISM
 alias gocism='cd ~/Documents/Code/CISM'
 alias devcism='cd ~/Documents/Code/cism-dev'
