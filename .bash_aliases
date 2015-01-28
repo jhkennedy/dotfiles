@@ -12,6 +12,12 @@ function nullit () {
 	"$1" "$2" 2>/dev/null &
 }
 
+# function to view markdown in the console
+function mdo () {
+    pandoc "$1" -f markdown_github -t html | lynx -stdin
+}
+complete -f -o plusdirs -X '!*.md' mdo
+
 
 # Writing
 alias gowrite='cd ~/Documents/Writing'
