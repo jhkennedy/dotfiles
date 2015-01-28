@@ -76,6 +76,9 @@ colorscheme joe_dark
 " show line numbers
 set number
 
+" show column number
+set ruler
+
 " highlight current line
 set cursorline
 
