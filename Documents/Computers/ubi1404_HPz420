@@ -56,9 +56,7 @@ sudo apt-get install -y libboost-all-dev libboost-doc
 sudo apt-get install -y libcgal-dev
     # CGAL libraries: http://doc.cgal.org/
 # Science stuff
-echo "GNUPLOTS"
 sudo apt-get install -y gnuplot units graphviz
-echo "DONE GNUPLOTS"
     # units is a comand line unit converter
 # NCL
 sudo apt-get install -y ferret-vis libbz2-dev libcairo2-dev xorg-dev

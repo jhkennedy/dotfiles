@@ -33,7 +33,8 @@ sudo apt-get install -y build-essential cvs vim-gnome cmake cmake-curses-gui
 sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list 
     # make gvim defualt text editor -- edit to suit your preferences. 
 sudo apt-get install -y gedit-plugins doxygen geany geany-plugins
-sudo apt-get install -y python-scipy python-sphinx python-pyproj python-matplotlib python-netcdf python-pip
+sudo apt-get install -y python-dev python-numpy python-matplotlib python-scientific python-pip
+sudo apt-get install -y python-scipy python-sphinx python-pyproj python-netcdf
 sudo apt-get install -y bzr bzr-doc
     # Version control system (my pref)
 sudo apt-get install -y git git-doc 
@@ -49,7 +50,7 @@ sudo apt-get install -y libboost-all-dev libboost-doc
 sudo apt-get install -y libcgal-dev
     # CGAL libraries: http://doc.cgal.org/
 # Science stuff
-sudo apt-get install -y gnuplot units graphviZ
+sudo apt-get install -y gnuplot units graphviz
     # units is a comand line unit converter
 # GMT Generic Mapping tools -- build from source
 sudo apt-get install -y libgdal1-dev libfftw3-dev libpcre3-dev GraphicsMagick subversion
