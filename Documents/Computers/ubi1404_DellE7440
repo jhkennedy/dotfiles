@@ -38,6 +38,7 @@ sudo apt-get install -y bzr bzr-doc
     # Version control system (my pref)
 sudo apt-get install -y git git-doc 
     # Version control system (most popular)
+sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
 #
 # Fortran
@@ -55,11 +56,10 @@ sudo apt-get install -y libgdal1-dev libfftw3-dev libpcre3-dev GraphicsMagick su
     # download source using:
     # svn checkout svn://gmtserver.soest.hawaii.edu/gmt5/trunk gmt5-dev
     # then follow build instructions
-sudo apt-get install -y ferret-vis ncl-ncarg
-sudo ln -s /usr/share/ncarg /usr/lib/ncarg
-    # this fixes a bug in NCL, fixed in NCL 6.2.0.1ubuntu1
-    # test first with:
-    #ng4ex gsun01n -clean
+# NCL
+sudo apt-get install -y ferret-vis libbz2-dev libcairo2-dev xorg-dev
+    # will need to install ncl-ncarg from source for 14.04
+    # bug has been fixed for 14.10 and later.
 sudo apt-get install -y octave
 sudo apt-get install -y texlive-full bibtex2html latexdiff diffpdf perl-doc
 sudo apt-get install -y autotrace engauge-digitizer # for digitizing plots
@@ -149,6 +149,7 @@ sudo apt-get autoremove
 #
 #
 # Software to build (see notes above):
+# NCL-NCARG                 X
 # PETSc                     -
 # PISM                      -
 # Trilinos                  X
