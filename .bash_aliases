@@ -19,7 +19,7 @@ function mdo () {
 complete -f -o plusdirs -X '!*.md' mdo
 
 # General
-alias golearn='cd ~/Documents/Lean'
+alias golearn='cd ~/Documents/Learn'
 
 # Writing
 alias gowrite='cd ~/Documents/Writing'
