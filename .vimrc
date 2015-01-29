@@ -90,3 +90,4 @@ set cursorline
 " set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
 set cmdheight=2
+
