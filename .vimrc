@@ -38,15 +38,15 @@ endif
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
-set showcmd		" Show (partial) command in status line.
-set showmatch		" Show matching brackets.
-set ignorecase		" Do case insensitive matching
-set smartcase		" Do smart case matching
-set incsearch		" Incremental search
-set hlsearch            " highlight matches
+set showcmd	       	" Show (partial) command in status line.
+set showmatch	   	" Show matching brackets.
+set ignorecase	   	" Do case insensitive matching
+set smartcase	   	" Do smart case matching
+set incsearch	   	" Incremental search
+set hlsearch        " highlight matches
 "set autowrite		" Automatically save before commands like :next and :make
-"set hidden		" Hide buffers when they are abandoned
-set mouse=a		" Enable mouse usage (all modes)
+"set hidden	       	" Hide buffers when they are abandoned
+set mouse=a	       	" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -57,14 +57,11 @@ endif
 """""""""""""""""""""""""""""
 " My settings -- Oct. 2, 2014
 """""""""""""""""""""""""""""
-" allow pasting from clipbord easily. This is not good vim practice. 
-set paste
-
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 
-set lazyredraw          " redraw only when we need to.
+set lazyredraw      " redraw only when we need to.
 
 
 " a nice dark colorscheme

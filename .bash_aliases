@@ -18,6 +18,8 @@ function mdo () {
 }
 complete -f -o plusdirs -X '!*.md' mdo
 
+# General
+alias golearn='cd ~/Documents/Lean'
 
 # Writing
 alias gowrite='cd ~/Documents/Writing'
@@ -59,3 +61,8 @@ export PETSC_ARCH='linux_gnu_opt'
 export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
 
 export PATH=~/pism-dev/bin:$PATH
+
+# ORNL OLCF systems
+alias gotitan='ssh kennedy@titan.ccs.ornl.gov' # Cray XK7
+alias gorhea='ssh kennedy@rhea.ccs.ornl.gov'   # general purpose cluster
+alias goccs='ssh kennedy@home.ccs.ornl.gov'    # general purpose server
