@@ -26,6 +26,12 @@ alias gowrite='cd ~/Documents/Writing'
 alias gopapers='cd ~/Documents/Writing/Papers'
 alias gothesis='cd ~/Documents/Writing/Thesis/Dissertation'
 
+alias gotaylor='cd ~/Documents/Writing/Papers/Taylor'
+alias gosimple='cd ~/Documents/Writing/Papers/SimpleMigRe'
+alias gopismfevor='cd ~/Documents/Writing/Papers/PISM-FEvoR'
+
+alias goldrd='cd ~/Documents/Writing/Proposals/LDRD/FY2016'
+
 alias makepdf='./makepdf'
 
 
@@ -66,3 +72,4 @@ export PATH=~/pism-dev/bin:$PATH
 alias gotitan='ssh kennedy@titan.ccs.ornl.gov' # Cray XK7
 alias gorhea='ssh kennedy@rhea.ccs.ornl.gov'   # general purpose cluster
 alias goccs='ssh kennedy@home.ccs.ornl.gov'    # general purpose server
+alias godtn='ssh kennedy@dtn.ccs.ornl.gov'
