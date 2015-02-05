@@ -24,6 +24,7 @@ alias golearn='cd ~/Documents/Learn'
 # Writing
 alias gowrite='cd ~/Documents/Writing'
 alias gopapers='cd ~/Documents/Writing/Papers'
+alias gographics='cd ~/Documents/Writing/Graphics'
 alias gothesis='cd ~/Documents/Writing/Thesis/Dissertation'
 
 alias gotaylor='cd ~/Documents/Writing/Papers/Taylor'
