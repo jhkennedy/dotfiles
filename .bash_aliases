@@ -18,6 +18,11 @@ function mdo () {
 }
 complete -f -o plusdirs -X '!*.md' mdo
 
+# funtion to make a directory and move into it
+function gomkdir () {
+    mkdir "$1" && cd "$1"
+}
+
 # General
 alias golearn='cd ~/Documents/Learn'
 
@@ -63,7 +68,7 @@ export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
 # PISM
 alias gopism='cd ~/Documents/Code/pism'
 
-export PETSC_DIR='/home/fjk/Documents/Code/petsc-3.4.5'
+export PETSC_DIR='/home/fjk/Documents/Code/petsc-3.5.3'
 export PETSC_ARCH='linux_gnu_opt'
 export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
 
