@@ -15,3 +15,6 @@ ignore = Path Code
 
 # ignore library as it is synced via mendeley
 ignore = Path Library
+
+# ignore data directory as it is likely too large.
+ignore = Path Data
