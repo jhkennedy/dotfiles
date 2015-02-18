@@ -65,6 +65,8 @@ alias golivv='cd ~/Documents/Code/LIVV'
 
 export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
 
+alias gocism-data='cd ~/Documents/Code/cism-data'
+
 # PISM
 alias gopism='cd ~/Documents/Code/pism'
 
