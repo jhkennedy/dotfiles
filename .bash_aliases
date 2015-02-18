@@ -80,4 +80,9 @@ export PATH=~/pism-dev/bin:$PATH
 alias gotitan='ssh kennedy@titan.ccs.ornl.gov' # Cray XK7
 alias gorhea='ssh kennedy@rhea.ccs.ornl.gov'   # general purpose cluster
 alias goccs='ssh kennedy@home.ccs.ornl.gov'    # general purpose server
-alias godtn='ssh kennedy@dtn.ccs.ornl.gov'
+alias godtn='ssh kennedy@dtn.ccs.ornl.gov'     # data transfer nodes
+
+# NERSC systems
+alias gohopper='ssh kennedyj@hopper.nersc.gov'
+alias gocarver='ssh kennedyj@carver.nersc.gov'
+
