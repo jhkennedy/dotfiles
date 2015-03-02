@@ -47,6 +47,7 @@ alias make='make -j 3'
 
 # Data
 alias godata='cd ~/Documents/Data'
+alias goiceice='cd ~/Documents/Data/IceIceData'
 
 # FEvoR
 alias gofevor='cd ~/Documents/Code/fevor'
@@ -86,3 +87,5 @@ alias godtn='ssh kennedy@dtn.ccs.ornl.gov'     # data transfer nodes
 alias gohopper='ssh kennedyj@hopper.nersc.gov'
 alias gocarver='ssh kennedyj@carver.nersc.gov'
 
+# ORNL Desktop
+alias godesk='ssh -Y pc0101123.ornl.gov'
