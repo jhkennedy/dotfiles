@@ -1,6 +1,9 @@
 # grey background for the command prompt
 #export PS1="\e[44m\u@\h \w$ \e[m"
 
+#TODO: func this:
+#find ./*(Figures|Tables|Text)/ -iname "*.tex" -exec grep --color=always -Hin ", and" {} \;
+
 # function to open pdfs quietly. 
 function pdfo () {
 	evince "$1" 2>/dev/null & 
