@@ -27,6 +27,7 @@ function gomkdir () {
 }
 
 # General
+alias term='gnome-terminal'
 alias golearn='cd ~/Documents/Learn'
 
 # Writing
