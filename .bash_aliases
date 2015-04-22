@@ -61,10 +61,8 @@ export NCARG_ROOT='/usr/local/ncl-6.1.2'
 export PATH=$NCARG_ROOT/bin:$PATH
 
 # CISM
-alias gocism='cd ~/Documents/Code/CISM'
-alias devcism='cd ~/Documents/Code/cism-dev'
-alias buildcism='cd ~/Documents/Code/cism-dev/builds/ubuntu-1404-cism'
-alias testcism='cd ~/Documents/Code/cism-dev/tests'
+alias gocism-public='cd ~/Documents/Code/CISM'
+alias gocism='cd ~/Documents/Code/cism-dev'
 
 alias golivv='cd ~/Documents/Code/LIVV'
 
