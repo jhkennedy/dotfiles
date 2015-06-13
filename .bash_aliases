@@ -29,6 +29,7 @@ function gomkdir () {
 # General
 alias term='gnome-terminal'
 alias golearn='cd ~/Documents/Learn'
+alias vim='vim -p'
 
 # Writing
 alias gowrite='cd ~/Documents/Writing'
@@ -40,7 +41,7 @@ alias gotaylor='cd ~/Documents/Writing/Papers/Taylor'
 alias gosimple='cd ~/Documents/Writing/Papers/SimpleMigRe'
 alias gopismfevor='cd ~/Documents/Writing/Papers/PISM-FEvoR'
 
-alias goldrd='cd ~/Documents/Writing/Proposals/LDRD/FY2016'
+alias goldrd='cd ~/Documents/Writing/Proposals/LDRD'
 
 alias makepdf='./makepdf'
 
