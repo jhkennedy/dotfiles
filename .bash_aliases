@@ -1,9 +1,6 @@
 # grey background for the command prompt
 #export PS1="\e[44m\u@\h \w$ \e[m"
 
-#TODO: func this:
-#find ./*(Figures|Tables|Text)/ -iname "*.tex" -exec grep --color=always -Hin ", and" {} \;
-
 # function to open pdfs quietly. 
 function pdfo () {
 	evince "$1" 2>/dev/null & 
@@ -24,6 +21,12 @@ complete -f -o plusdirs -X '!*.md' mdo
 # funtion to make a directory and move into it
 function gomkdir () {
     mkdir "$1" && cd "$1"
+}
+
+# function to find something, then execute grep
+#find ./*(Figures|Tables|Text)/ -iname "*.tex" -exec grep --color=always -Hin ", and" {} \;
+function findgrep () {
+    eval find "$1" -iname \"$2\" -exec grep --color=always -Hin "$3" {} \\\; 
 }
 
 # General
