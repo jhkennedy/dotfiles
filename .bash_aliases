@@ -53,6 +53,8 @@ alias makepdf='./makepdf'
 alias gocode='cd ~/Documents/Code'
 alias make='make -j 3'
 
+alias godocs='cd ~/Documents/Docs'
+
 # Data
 alias godata='cd ~/Documents/Data'
 alias goiceice='cd ~/Documents/Data/IceIceData'
