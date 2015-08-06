@@ -10,8 +10,19 @@ perms = 0
 # cread a common file to add any added prefs to (from gui)
 addprefsto = pc0101123.gui
 
-# ignore code dir as all should be synced via github or jhkennedy.org
+# ignore code dir -- should be synced via github or jhkennedy.org
 ignore = Path Code
+
+# ignore papers -- should be synced via github or jhkennedy.org
+ignore = Path Writing/Papers
+ignore = Path Writing/Thesis
+
+# ignore docs that are synced via github or jhkennedy.org
+ignore = Path Docs/LIVVkit-wiki
+ignore = Path Docs/ACME-livv-ghpages
+ignore = Path Docs/cism-documentation
+ignore = Path Docs/ACME-livv-wiki
+ignore = Path Docs/mcMMO.wiki
 
 # ignore library as it is synced via mendeley
 ignore = Path Library
@@ -21,3 +32,4 @@ ignore = Path Data
 
 # ignore the NoMachine directory
 ignore = Path NoMachine
+
