@@ -29,6 +29,10 @@ function findgrep () {
     eval find "$1" -iname \"$2\" -exec grep --color=always -Hin "$3" {} \\\; 
 }
 
+# My server
+alias gojoserver='ssh -Y joseph@jhkennedy.org'
+
+
 # General
 alias term='gnome-terminal'
 alias golearn='cd ~/Documents/Learn'
