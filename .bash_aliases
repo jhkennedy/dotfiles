@@ -30,7 +30,7 @@ function findgrep () {
 }
 
 # My server
-alias gojoserver='ssh -Y joseph@jhkennedy.org'
+alias gojoserver='ssh joseph@jhkennedy.org'
 
 
 # General
