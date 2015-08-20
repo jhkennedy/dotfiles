@@ -71,11 +71,12 @@ export NCARG_ROOT='/usr/local/ncl-6.1.2'
 export PATH=$NCARG_ROOT/bin:$PATH
 
 # CISM
-alias gocism-public='cd ~/Documents/Code/CISM'
+alias gocism-public='cd ~/Documents/Code/cism-pub'
 alias gocism='cd ~/Documents/Code/cism-dev'
 alias gocism-manual='cd ~/Documents/Docs/cism-documentation'
 
-alias golivv='cd ~/Documents/Code/LIVV'
+alias golivv='cd ~/Documents/Code/livv-dev'
+alias golivv-public='cd ~/Documents/Code/livv-pub'
 
 export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
 
