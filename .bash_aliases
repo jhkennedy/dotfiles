@@ -73,6 +73,7 @@ export PATH=$NCARG_ROOT/bin:$PATH
 # CISM
 alias gocism-public='cd ~/Documents/Code/CISM'
 alias gocism='cd ~/Documents/Code/cism-dev'
+alias gocism-manual='cd ~/Documents/Docs/cism-documentation'
 
 alias golivv='cd ~/Documents/Code/LIVV'
 
