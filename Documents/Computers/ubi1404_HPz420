@@ -41,6 +41,7 @@ sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list
 sudo apt-get install -y gedit-plugins doxygen geany geany-plugins
 sudo apt-get install -y python-dev python-numpy python-matplotlib python-scientific python-pip
 sudo apt-get install -y python-scipy python-sphinx python-pyproj python-netcdf python-mpltoolkits.basemap
+sudo apt-get install -y python-bs4
 sudo -E pip install doxypy
 sudo apt-get install -y bzr bzr-doc
     # Version control system (my pref)

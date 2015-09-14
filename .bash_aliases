@@ -76,6 +76,7 @@ alias gocism='cd ~/Documents/Code/cism-dev'
 alias gocism-manual='cd ~/Documents/Docs/cism-documentation'
 
 alias golivv='cd ~/Documents/Code/livv-dev'
+alias golivv-nightly='cd ~/Documents/Code/livv-nightly'
 alias golivv-public='cd ~/Documents/Code/livv-pub'
 
 export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
