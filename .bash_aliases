@@ -104,3 +104,7 @@ alias gocarver='ssh kennedyj@carver.nersc.gov'
 
 # ORNL Desktop
 alias godesk='ssh -Y pc0101123.ornl.gov'
+
+# Blizzard
+alias goblizzard='ssh -Y blizzard.ornl.gov'
+
