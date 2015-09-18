@@ -18,6 +18,8 @@
 # proxy connections with ssh
 sudo apt-get install -y corkscrew
 #
+# to hold authorized keys for running ssh in cron
+sudo apt-get install -y keychain
 # Ubuntu stuff
 sudo apt-get install -y ubuntu-desktop
 sudo apt-get install -y ppa-purge unity-tweak-tool

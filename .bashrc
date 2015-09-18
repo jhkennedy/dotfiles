@@ -112,3 +112,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# start the keychain
+if [ -f /usr/bin/keychain ]; then
+    /usr/bin/keychain --quiet $HOME/.ssh/id_rsa 
+    source $HOME/.keychain/${HOSTNAME}-sh
+fi
