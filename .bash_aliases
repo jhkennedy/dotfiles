@@ -41,12 +41,12 @@ alias vim='vim -p'
 # Writing
 alias gowrite='cd ~/Documents/Writing'
 alias gopapers='cd ~/Documents/Writing/Papers'
+alias goproposals='cd ~/Documents/Writing/Proposals' 
 alias gographics='cd ~/Documents/Writing/Graphics'
 alias gothesis='cd ~/Documents/Writing/Thesis/Dissertation'
 
-alias gotaylor='cd ~/Documents/Writing/Papers/Taylor'
-alias gosimple='cd ~/Documents/Writing/Papers/SimpleMigRe'
 alias gopismfevor='cd ~/Documents/Writing/Papers/PISM-FEvoR'
+alias golivv-paper='cd ~/Documents/Writing/Papers/LIVVkit'
 
 alias goldrd='cd ~/Documents/Writing/Proposals/LDRD'
 
