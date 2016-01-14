@@ -99,8 +99,7 @@ alias goccs='ssh kennedy@home.ccs.ornl.gov'    # general purpose server
 alias godtn='ssh kennedy@dtn.ccs.ornl.gov'     # data transfer nodes
 
 # NERSC systems
-alias gohopper='ssh kennedyj@hopper.nersc.gov'
-alias gocarver='ssh kennedyj@carver.nersc.gov'
+alias gocori='ssh kennedyj@cori.nersc.gov'
 
 # NCAR systems
 alias goyellowstone='ssh -X -l kennedy yellowstone.ucar.edu'

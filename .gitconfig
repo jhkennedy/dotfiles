@@ -1,0 +1,16 @@
+[user]
+	name = Joseph H Kennedy
+	email = kennedyjh@ornl.gov
+[push]
+	default = simple
+[ui]
+    color = true
+[alias]
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit --author-date-order
+    up = fetch --all -p
+[merge]
+    summary = true
+    ff = false
+[core]
+    autocrlf = input
+    whitespace = trailing-space
