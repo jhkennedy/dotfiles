@@ -59,6 +59,9 @@ alias make='make -j 3'
 
 alias godocs='cd ~/Documents/Docs'
 
+# Experiments
+alias goexperiments='cd ~/Documents/Experiments'
+
 # Data
 alias godata='cd ~/Documents/Data'
 alias goiceice='cd ~/Documents/Data/IceIceData'
