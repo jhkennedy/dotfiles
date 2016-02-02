@@ -29,6 +29,10 @@ function findgrep () {
     eval find "$1" -iname \"$2\" -exec grep --color=always -Hin "$3" {} \\\; 
 }
 
+#alias findquotes='find ./ -iname "*.py" -exec grep --color=always -Hin \' {} \;'
+#alias finddoublequotes='find ./ -iname "*.py" -exec grep --color=always -Hin \" {} \;'
+#alias findcodelines='find ./ -iname "*.py" | xargs wc -l'
+
 # My server
 alias gojoserver='ssh joseph@jhkennedy.org'
 
