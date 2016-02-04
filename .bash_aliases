@@ -41,6 +41,7 @@ alias gojoserver='ssh joseph@jhkennedy.org'
 alias term='gnome-terminal'
 alias golearn='cd ~/Documents/Learn'
 alias vim='vim -p'
+alias githash='git rev-parse --short HEAD'
 
 # Writing
 alias gowrite='cd ~/Documents/Writing'
