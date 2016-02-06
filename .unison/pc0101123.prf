@@ -11,8 +11,8 @@ perms = 0
 addprefsto = pc0101123.gui
 
 # ignore code dir -- should be synced via github or jhkennedy.org
-ignore = Path Code
-
+ignorenot = Path Code/misc
+ignore = Path Code/*
 # ignore papers -- should be synced via github or jhkennedy.org
 ignore = Path Writing/Papers
 ignore = Path Writing/Thesis

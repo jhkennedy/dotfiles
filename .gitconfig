@@ -8,6 +8,7 @@
 [alias]
     tree = log --graph --decorate --pretty=oneline --abbrev-commit --author-date-order
     up = fetch --all -p
+    ff = pull --ff-only
 [merge]
     summary = true
     ff = false
