@@ -66,6 +66,7 @@ alias godocs='cd ~/Documents/Docs'
 
 # Experiments
 alias goexperiments='cd ~/Documents/Experiments'
+alias goinitmip='cd ~/Documents/Experiments/ISMIP6/initMIP/1km-ICS-4JoeK/play'
 
 # Data
 alias godata='cd ~/Documents/Data'
