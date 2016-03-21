@@ -117,6 +117,10 @@ alias goyellowstone='ssh -X -l kennedy yellowstone.ucar.edu'
 # ORNL Desktop
 alias godesk='ssh -Y pc0101123.ornl.gov'
 
+# ORNL network
+alias corkon='cp ~/.ssh/config.bak ~/.ssh/config'
+alias corkoff='echo " " > ~/.ssh/config'
+
 # Blizzard
 alias goblizzard='ssh -Y blizzard.ornl.gov'
 
