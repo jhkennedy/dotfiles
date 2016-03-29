@@ -14,9 +14,13 @@ addprefsto = pc0101123.gui
 ignorenot = Path Code/misc
 ignore = Path Code/*
 ignore = Path Code/misc/LIVV_CESM_tools_Marcus/CESMtools2Joe
+
 # ignore papers -- should be synced via github or jhkennedy.org
 ignore = Path Writing/Papers
 ignore = Path Writing/Thesis
+
+# ignore githubed experiments
+ignore = Path Experiments/ISMIP6/initMIP/1km-ICS-4JoeK/play
 
 # ignore docs that are synced via github or jhkennedy.org
 ignore = Path Docs/LIVVkit-wiki
