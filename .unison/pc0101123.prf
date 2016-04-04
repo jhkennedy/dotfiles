@@ -20,7 +20,7 @@ ignore = Path Writing/Papers
 ignore = Path Writing/Thesis
 
 # ignore githubed experiments
-ignore = Path Experiments/ISMIP6/initMIP/1km-ICS-4JoeK/play
+#ignore = Path Experiments/ISMIP6/initMIP
 
 # ignore docs that are synced via github or jhkennedy.org
 ignore = Path Docs/LIVVkit-wiki
