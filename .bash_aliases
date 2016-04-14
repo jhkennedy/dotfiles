@@ -24,9 +24,16 @@ function gomkdir () {
 }
 
 # function to find something, then execute grep
-#find ./*(Figures|Tables|Text)/ -iname "*.tex" -exec grep --color=always -Hin ", and" {} \;
 function findgrep () {
     eval find "$1" -iname \"$2\" -exec grep --color=always -Hin "$3" {} \\\; 
+}
+
+function findtex () {
+    eval find "$1" -iname \"*.tex\" -exec grep --color=always -Hin "$2" {} \\\;
+}
+
+function findmytex () {
+    eval find "./*(Figures|Tables|Text)/" -iname \"*.tex\" -exec grep --color=always -Hin "$1" {} \\\;
 }
 
 #alias findquotes='find ./ -iname "*.py" -exec grep --color=always -Hin \' {} \;'
