@@ -49,6 +49,7 @@ sudo -E pip install doxypy
 sudo apt-get install -y bzr bzr-doc
     # Version control system (my pref)
 sudo apt-get install -y git git-doc 
+sudo apt-get install -y mercurial 
     # Version control system (most popular)
 sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
@@ -62,6 +63,7 @@ sudo apt-get install -y libcgal-dev
     # CGAL libraries: http://doc.cgal.org/
 # Science stuff
 sudo apt-get install -y gnuplot units graphviz
+sudo apt-get install -y gdal-bin
     # units is a comand line unit converter
 # NCL
 sudo apt-get install -y ferret-vis libbz2-dev libcairo2-dev xorg-dev

@@ -41,6 +41,7 @@ sudo -E pip install doxypy
 sudo apt-get install -y bzr bzr-doc
     # Version control system (my pref)
 sudo apt-get install -y git git-doc 
+sudo apt-get install -y mercurial 
     # Version control system (most popular)
 sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
@@ -55,6 +56,7 @@ sudo apt-get install -y libcgal-dev
 # Science stuff
 sudo apt-get install -y gnuplot units graphviz
     # units is a comand line unit converter
+sudo apt-get install -y gdal-bin
 # GMT Generic Mapping tools -- build from source
 sudo apt-get install -y libgdal1-dev libfftw3-dev libpcre3-dev GraphicsMagick subversion
     # download source using:
