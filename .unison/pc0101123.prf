@@ -18,7 +18,8 @@ ignore = Path Code/misc/LIVV_CESM_tools_Marcus/CESMtools2Joe
 # ignore papers -- should be synced via github or jhkennedy.org
 ignore = Path Writing/Papers
 ignore = Path Writing/Thesis
-ignore = Path Writing/Proposals/ACMESM_proposal
+ignore = Path Writing/Proposals/DOE/2016_ACMESM
+ignore = Path Writing/Proposals/DOE/2016_ABM/Proposal
 ignore = Path Writing/CV
 
 # ignore githubed experiments
