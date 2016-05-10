@@ -97,6 +97,9 @@ let Tex_FoldedSections=""
 let Tex_FoldedEnvironments=""
 let Tex_FoldedMisc=""
 
+" Fix spellcheck only looking at comments in imported files
+autocmd FileType plaintex,tex,latex syntax spell toplevel
+
 " Use github flavored markdown by default
 augroup markdown
     au!
