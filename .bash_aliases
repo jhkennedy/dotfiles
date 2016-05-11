@@ -61,6 +61,7 @@ alias gopismfevor='cd ~/Documents/Writing/Papers/PISM-FEvoR'
 alias golivv-paper='cd ~/Documents/Writing/Papers/LIVVkit'
 
 alias goldrd='cd ~/Documents/Writing/Proposals/LDRD'
+alias goabm='cd ~/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
 
 alias makepdf='./makepdf'
 
