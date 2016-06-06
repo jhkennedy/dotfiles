@@ -36,8 +36,11 @@ function findmytex () {
     eval find "./*(Figures|Tables|Text)/" -iname \"*.tex\" -exec grep --color=always -Hin "$1" {} \\\;
 }
 
-#alias findquotes='find ./ -iname "*.py" -exec grep --color=always -Hin \' {} \;'
-#alias finddoublequotes='find ./ -iname "*.py" -exec grep --color=always -Hin \" {} \;'
+function findpy () {
+    eval find "$1" -iname \"*.py\" -exec grep --color=always -Hin "$2" {} \\\;
+}
+
+alias pytree='tree -I __pycache__'
 #alias findcodelines='find ./ -iname "*.py" | xargs wc -l'
 
 # My server
