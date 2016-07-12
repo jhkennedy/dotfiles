@@ -1,6 +1,10 @@
 # grey background for the command prompt
 #export PS1="\e[44m\u@\h \w$ \e[m"
 
+###############################################################################
+# Useful functions
+###############################################################################
+
 # function to open pdfs quietly. 
 function pdfo () {
 	evince "$1" 2>/dev/null & 
@@ -39,6 +43,30 @@ function findmytex () {
 function findpy () {
     eval find "$1" -iname \"*.py\" -exec grep --color=always -Hin "$2" {} \\\;
 }
+
+###############################################################################
+# Path Exports
+###############################################################################
+
+# added by Anaconda3 4.1.1 installer
+export PATH="/home/fjk/anaconda3/bin:$PATH"
+
+# NCL
+export NCARG_ROOT='/usr/local/ncl-6.1.2'
+export PATH=$NCARG_ROOT/bin:$PATH
+
+# PISM
+export PETSC_DIR='/home/fjk/Documents/Code/petsc-3.5.3'
+export PETSC_ARCH='linux_gnu_opt'
+export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
+export PATH=~/pism-dev/bin:$PATH
+
+# CISM
+export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
+
+###############################################################################
+# Aliases
+###############################################################################
 
 alias pytree='tree -I __pycache__'
 #alias findcodelines='find ./ -iname "*.py" | xargs wc -l'
@@ -86,10 +114,6 @@ alias goiceice='cd ~/Documents/Data/IceIceData'
 # FEvoR
 alias gofevor='cd ~/Documents/Code/fevor'
 
-# NCL
-export NCARG_ROOT='/usr/local/ncl-6.1.2'
-export PATH=$NCARG_ROOT/bin:$PATH
-
 # CISM
 alias gocism-public='cd ~/Documents/Code/cism-pub'
 alias gocism='cd ~/Documents/Code/cism-dev'
@@ -100,18 +124,10 @@ alias golivv='cd ~/Documents/Code/livv-dev'
 alias golivv-nightly='cd ~/Documents/Code/livv-nightly'
 alias golivv-public='cd ~/Documents/Code/livv-pub'
 
-export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
-
 alias gocism-data='cd ~/Documents/Code/cism-data'
 
 # PISM
 alias gopism='cd ~/Documents/Code/pism'
-
-export PETSC_DIR='/home/fjk/Documents/Code/petsc-3.5.3'
-export PETSC_ARCH='linux_gnu_opt'
-export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
-
-export PATH=~/pism-dev/bin:$PATH
 
 # ORNL OLCF systems
 alias gotitan='ssh kennedy@titan.ccs.ornl.gov' # Cray XK7
