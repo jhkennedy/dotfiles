@@ -1,0 +1,213 @@
+#!/bin/bash
+# -----------------------------------------------------------------------------
+# FOR: 16.04 on a Dell Lattitude E7440 for ORNL
+# -----------------------------------------------------------------------------
+# script to install all the extra stuff I like in ubuntu. When java installs
+# you will need to accept the UELA. May need to aprove changes from time to
+# time (-y should take care of that). Make sure to read through this list and
+# comment out lines you do not want with a '#'. If it ever says that it can't
+# find a package, that whole line will not go, so deleate that package from
+# line, and then re-run the script (will not hurt to run more than once).
+# -----------------------------------------------------------------------------
+
+# proxy connections with ssh
+# --------------------------
+sudo apt-get install -y corkscrew
+
+# Ubuntu stuff
+# ------------
+sudo apt-get install -y ppa-purge unity-tweak-tool
+
+# to be able to see windows partitions
+# ------------------------------------
+#sudo apt-get install -y ntfs-config # to see windows drive
+
+# Media stuff
+# -----------
+sudo apt-get install -y ttf-liberation flashplugin-installer
+sudo apt-get install -y ubuntu-restricted-addons ubuntu-restricted-extras
+
+# Productivity stuff
+# ------------------
+sudo apt-get install -y tomboy
+
+# prorgraming stuff
+# -----------------
+sudo apt-get install -y build-essential cvs vim-gnome cmake cmake-curses-gui
+# make gvim defualt text editor -- edit to suit your preferences. 
+sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list 
+sudo apt-get install -y gedit-plugins doxygen geany geany-plugins
+sudo apt-get install -y git git-doc 
+sudo apt-get install -y bzr bzr-doc
+sudo apt-get install -y mercurial 
+sudo apt-get install -y pandoc lynx
+sudo apt-get install -y colordiff
+
+# Fortran
+# -------
+sudo apt-get install -y gfortran
+
+# C++ Libraries
+# -------------
+# boost libraries: http://www.boost.org/ 
+sudo apt-get install -y libboost-all-dev libboost-doc
+# CGAL libraries: http://doc.cgal.org/
+sudo apt-get install -y libcgal-dev
+
+# Science stuff
+# -------------
+# units is a comand line unit converter
+sudo apt-get install -y gnuplot units graphviz
+sudo apt-get install -y gdal-bin
+# GMT Generic Mapping tools -- build from source
+#     download source using:
+#     svn checkout svn://gmtserver.soest.hawaii.edu/gmt5/trunk gmt5-dev
+#     then follow build instructions
+sudo apt-get install -y libgdal1-dev libfftw3-dev libpcre3-dev graphicsmagick subversion
+sudo apt-get install -y ncl-ncarg ferret-vis libbz2-dev libcairo2-dev xorg-dev
+sudo apt-get install -y octave
+sudo apt-get install -y texlive-full bibtex2html latexdiff diffpdf perl-doc
+# for digitizing plots
+sudo apt-get install -y autotrace engauge-digitizer 
+sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers flex
+sudo apt-get install -y libnetcdf-dev netcdf-bin netcdf-doc nco ncview
+sudo apt-get install -y libblas-dev
+sudo apt-get install -y openmpi-bin libopenmpi-dev
+sudo apt-get install -y liblapack-dev
+
+# FEM Framework
+# -------------
+# http://fenicsproject.org/download/ubuntu_details.html
+#sudo add-apt-repository ppa:fenics-packages/fenics
+#sudo apt-get update
+#sudo apt-get install -y fenics
+#sudo apt-get dist-upgrade
+#this was needed for first demo script, wtf? Are there more dep. not installed?
+#sudo apt-get install -y libcgal9 
+
+## PISM Dependencies
+# ------------------
+sudo apt-get install -y libgsl0-dev libudunits2-dev cdo libproj-dev libx11-dev
+# Will need PETSc -- build from source!
+# Build PISM from source as well!
+
+# CISM Dependencies
+# ------------------
+# Will need Trilinos
+#     install from http://trilinos.org/
+#     this will take a lot of time to build. Seriously. 
+#     use CISM documentation to install.
+
+# File stuff
+# ----------
+# see tree structure of subdirectories in terminal
+sudo apt-get install -y tree
+# file extraction
+sudo apt-get install -y p7zip-full
+# file sync program
+sudo apt-get install -y unison-gtk 
+# cross platform FTP client 
+sudo apt-get install -y filezilla 
+# disk utility
+sudo apt-get install -y gparted 
+
+# Image stuff
+# -----------
+# gimp -> photoshop, 
+# inkscape -> illustrator, 
+# xournal -> annotates pdfs, 
+# icoutils -> .ico creator
+sudo apt-get install -y gimp inkscape xournal icoutils
+
+# Video Editor:
+# -------------
+sudo apt-get install -y openshot
+
+# java
+# ----
+sudo apt-get install -y default-jdk 
+
+# debian configuration tools
+# --------------------------
+# This is how you change the gedit-terminal colors! 
+sudo apt-get install -y dconf-tools gconf-editor
+
+# Weather and system monitor indicators
+# -------------------------------------
+sudo add-apt-repository ppa:atareao/atareao
+sudo apt-get update
+sudo apt-get install -y my-weather-indicator
+sudo apt-get install -y indicator-multiload
+
+# Fitbit sync
+# -----------
+# sudo apt-get isntall -y python-usb python-requests
+
+
+# -----------------------------------------------------------------------------
+# Clean up
+# -----------------------------------------------------------------------------
+sudo apt-get autoremove
+
+# Set up windows partition support
+# --------------------------------
+# sudo ntfs-config 
+
+# -----------------------------------------------------------------------------
+# Software to build (see notes above):
+# -----------------------------------------------------------------------------
+# PETSc                     -
+# PISM                      -
+# Trilinos                  -
+# CISM                      -
+
+
+# -----------------------------------------------------------------------------
+# Other things to Install:
+# -----------------------------------------------------------------------------
+#    Synergy (paid)         -
+#    Anaconda3              -
+#    Mendeley               -
+#    GoogleChrome           -
+#    GoogleEarth            -
+#        64bit version doesn't work as ia32-libs is depreciated and no longer
+#        available (google does not provide an actual 64bit version). Need to
+#        install 32bit version from website and install these first:
+#            sudo apt-get install -y libc6-i386 libglib2.0-0:i386 libsm6:i386
+#            sudo apt-get install -y libglu1-mesa:i386 libgl1-mesa-glx:i386
+#            sudo apt-get install -y libxext6:i386 libxrender1:i386 
+#            sudo apt-get install -y libx11-6:i386 libfontconfig1:i386
+#            sudo apt-get install -y lsb-core lib32nss-mdns
+#        see more info here: https://help.ubuntu.com/community/GoogleEarth
+
+
+# -----------------------------------------------------------------------------
+# To configure after install:
+# -----------------------------------------------------------------------------
+# Citrix                    - see citrix guide
+# Empathy                   -
+# Tomboy                    - <-- sync with Documents/Notes
+# Thunderbird               - see OLUG guide
+# home.git                  - <-- on jhkennedy.org -- see notes below
+# Unison                    - <-- Example in home.git
+# Mendeley                  -
+# launch weather indicator  -
+# launch sysmonitor indic.  -
+# Synergy                   -
+# enable workspaces         - <-- in appearance and then use unity-tweak-tool
+#                                 to set number or wanted workspaces
+
+
+# -----------------------------------------------------------------------------
+# NOTES: 
+# -----------------------------------------------------------------------------
+# home.git setup
+# Normal git clone commands for the home.git repository will fail because you will be cloning into a non-empty
+# directory. In order to clone the repository you will need to:
+  # cd ~
+  # git init
+  # git remote add origin joseph@jhkennedy.org:home.git
+  # git fetch
+  # git checkout -t origin/ORNL
+  # git reset --hard HEAD
+# WARNING: this will wipe any current information in the tracked files. BE SURE THIS IS WHAT YOU WANT TO DO.
