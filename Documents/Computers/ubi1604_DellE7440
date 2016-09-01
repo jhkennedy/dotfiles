@@ -2,12 +2,12 @@
 # -----------------------------------------------------------------------------
 # FOR: 16.04 on a Dell Lattitude E7440 for ORNL
 # -----------------------------------------------------------------------------
-# script to install all the extra stuff I like in ubuntu. When java installs
-# you will need to accept the UELA. May need to aprove changes from time to
+# script to install all the extra stuff I like in Ubuntu. When java installs,
+# you will need to accept the UELA. You may need to approve changes from time to
 # time (-y should take care of that). Make sure to read through this list and
 # comment out lines you do not want with a '#'. If it ever says that it can't
-# find a package, that whole line will not go, so deleate that package from
-# line, and then re-run the script (will not hurt to run more than once).
+# find a package, that whole line will not go, so delete that package from line,
+# and then re-run the script (it will not hurt to run this more than once).
 # -----------------------------------------------------------------------------
 
 
@@ -44,6 +44,21 @@ sudo apt-get install -y mercurial
 sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
 
+# diffuse
+# -------
+# So, diffuse and anaconda don't play well together. Diffuse tries to import
+# pygtk which is (very) unlikely to be available in your conda environment.
+# However, because diffuse installed through apt, pygtk will be available on
+# your system. To fix this, you can edit the diffuse script's hashbang line:
+#       vim /usr/bin/diffuse
+# and change
+#       #!/usr/bin/env python
+# to 
+#       #!/usr/bin/python2
+# This will force diffuse to use the system python. 
+sudo apt-get install -y diffuse
+
+
 # Fortran
 # -------
 sudo apt-get install -y gfortran
@@ -57,13 +72,9 @@ sudo apt-get install -y libcgal-dev
 
 # Science stuff
 # -------------
-# units is a comand line unit converter
+# units is a command line unit converter
 sudo apt-get install -y gnuplot units graphviz
 sudo apt-get install -y gdal-bin
-# GMT Generic Mapping tools -- build from source
-#     download source using:
-#     svn checkout svn://gmtserver.soest.hawaii.edu/gmt5/trunk gmt5-dev
-#     then follow build instructions
 sudo apt-get install -y libgdal1-dev libfftw3-dev libpcre3-dev graphicsmagick subversion
 sudo apt-get install -y ncl-ncarg ferret-vis libbz2-dev libcairo2-dev xorg-dev
 sudo apt-get install -y octave
@@ -76,18 +87,9 @@ sudo apt-get install -y libblas-dev
 sudo apt-get install -y openmpi-bin libopenmpi-dev
 sudo apt-get install -y liblapack-dev
 
-## PISM Dependencies
-# ------------------
+# PISM Dependencies
+# -----------------
 sudo apt-get install -y libgsl0-dev libudunits2-dev cdo libproj-dev libx11-dev
-# Will need PETSc -- build from source!
-# Build PISM from source as well!
-
-# CISM Dependencies
-# ------------------
-# Will need Trilinos
-#     install from http://trilinos.org/
-#     this will take a lot of time to build. Seriously. 
-#     use CISM documentation to install.
 
 # File stuff
 # ----------
@@ -134,6 +136,18 @@ sudo apt-get install -y indicator-multiload
 # -----------
 # sudo apt-get isntall -y python-usb python-requests
 
+# GMT Generic Mapping tools -- build from source
+#     download source using:
+#     svn checkout svn://gmtserver.soest.hawaii.edu/gmt5/trunk gmt5-dev
+#     then follow build instructions
+
+# CISM Dependencies
+# -----------------
+# Will need Trilinos
+#     install from http://trilinos.org/
+#     this will take a lot of time to build. Seriously. 
+#     use CISM documentation to install.
+
 
 # -----------------------------------------------------------------------------
 # Clean up
@@ -149,8 +163,9 @@ sudo apt-get autoremove
 # -----------------------------------------------------------------------------
 # PETSc                     -
 # PISM                      -
-# Trilinos                  -
+# Trilinos                  - <-- see notes above
 # CISM                      -
+# GMT                       x <-- see notes above
 
 
 # -----------------------------------------------------------------------------
@@ -165,16 +180,17 @@ sudo apt-get autoremove
 # -----------------------------------------------------------------------------
 # To configure after install:
 # -----------------------------------------------------------------------------
-# Citrix                    x see citrix guide
+# Citrix                    x <-- see citrix guide
 # Tomboy                    - <-- sync with Documents/Notes
 # home.git                  x <-- on jhkennedy.org -- see notes below
-# Unison                    - <-- Example in home.git
+# Unison                    x <-- Example in home.git
 # Mendeley                  x
 # Firefox Sync              x
 # launch weather indicator  x
 # launch sysmonitor indic.  x
 # enable workspaces         x <-- in appearance and then use unity-tweak-tool
 #                                 to set number or wanted workspaces
+# diffuse                   x <-- see notes above
 
 
 # -----------------------------------------------------------------------------
