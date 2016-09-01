@@ -10,6 +10,7 @@
 # line, and then re-run the script (will not hurt to run more than once).
 # -----------------------------------------------------------------------------
 
+
 # proxy connections with ssh
 # --------------------------
 sudo apt-get install -y corkscrew
@@ -70,20 +71,10 @@ sudo apt-get install -y texlive-full bibtex2html latexdiff diffpdf perl-doc
 # for digitizing plots
 sudo apt-get install -y autotrace engauge-digitizer 
 sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers flex
-sudo apt-get install -y libnetcdf-dev netcdf-bin netcdf-doc nco ncview
+sudo apt-get install -y libnetcdf-dev libnetcdff-dev netcdf-bin netcdf-doc nco ncview
 sudo apt-get install -y libblas-dev
 sudo apt-get install -y openmpi-bin libopenmpi-dev
 sudo apt-get install -y liblapack-dev
-
-# FEM Framework
-# -------------
-# http://fenicsproject.org/download/ubuntu_details.html
-#sudo add-apt-repository ppa:fenics-packages/fenics
-#sudo apt-get update
-#sudo apt-get install -y fenics
-#sudo apt-get dist-upgrade
-#this was needed for first demo script, wtf? Are there more dep. not installed?
-#sudo apt-get install -y libcgal9 
 
 ## PISM Dependencies
 # ------------------
@@ -105,7 +96,7 @@ sudo apt-get install -y tree
 # file extraction
 sudo apt-get install -y p7zip-full
 # file sync program
-sudo apt-get install -y unison-gtk 
+sudo apt-get install -y unison-all
 # cross platform FTP client 
 sudo apt-get install -y filezilla 
 # disk utility
@@ -165,36 +156,24 @@ sudo apt-get autoremove
 # -----------------------------------------------------------------------------
 # Other things to Install:
 # -----------------------------------------------------------------------------
-#    Synergy (paid)         -
-#    Anaconda3              -
-#    Mendeley               -
-#    GoogleChrome           -
-#    GoogleEarth            -
-#        64bit version doesn't work as ia32-libs is depreciated and no longer
-#        available (google does not provide an actual 64bit version). Need to
-#        install 32bit version from website and install these first:
-#            sudo apt-get install -y libc6-i386 libglib2.0-0:i386 libsm6:i386
-#            sudo apt-get install -y libglu1-mesa:i386 libgl1-mesa-glx:i386
-#            sudo apt-get install -y libxext6:i386 libxrender1:i386 
-#            sudo apt-get install -y libx11-6:i386 libfontconfig1:i386
-#            sudo apt-get install -y lsb-core lib32nss-mdns
-#        see more info here: https://help.ubuntu.com/community/GoogleEarth
+#    Synergy (paid)         x
+#    Anaconda3              x
+#    Mendeley               x
+#    GoogleChrome           x
 
 
 # -----------------------------------------------------------------------------
 # To configure after install:
 # -----------------------------------------------------------------------------
-# Citrix                    - see citrix guide
-# Empathy                   -
+# Citrix                    x see citrix guide
 # Tomboy                    - <-- sync with Documents/Notes
-# Thunderbird               - see OLUG guide
-# home.git                  - <-- on jhkennedy.org -- see notes below
+# home.git                  x <-- on jhkennedy.org -- see notes below
 # Unison                    - <-- Example in home.git
-# Mendeley                  -
-# launch weather indicator  -
-# launch sysmonitor indic.  -
-# Synergy                   -
-# enable workspaces         - <-- in appearance and then use unity-tweak-tool
+# Mendeley                  x
+# Firefox Sync              x
+# launch weather indicator  x
+# launch sysmonitor indic.  x
+# enable workspaces         x <-- in appearance and then use unity-tweak-tool
 #                                 to set number or wanted workspaces
 
 
