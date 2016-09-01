@@ -50,6 +50,8 @@ function findpy () {
 
 # added by Anaconda3 4.1.1 installer
 export PATH="/home/fjk/anaconda3/bin:$PATH"
+# always source the LIVVkit environment initially
+source activate LIVVkit
 
 # NCL
 export NCARG_ROOT='/usr/local/ncl-6.1.2'
