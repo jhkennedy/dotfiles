@@ -85,6 +85,7 @@ alias githash='git rev-parse --short HEAD'
 
 # Writing
 alias gowrite='cd ~/Documents/Writing'
+alias gocv='cd ~/Documents/Writing/CV'
 alias gopapers='cd ~/Documents/Writing/Papers'
 alias goproposals='cd ~/Documents/Writing/Proposals' 
 alias gographics='cd ~/Documents/Writing/Graphics'
