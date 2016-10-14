@@ -164,6 +164,7 @@ sudo apt-get autoremove
 # CISM                      X
 #
 # Other things to Install:
+#    Slack client           X
 #    Mendeley               X
 #    GoogleChrome           X
 #    GoogleEarth            X
