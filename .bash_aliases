@@ -45,28 +45,6 @@ function findpy () {
 }
 
 ###############################################################################
-# Path Exports
-###############################################################################
-
-# added by Anaconda3 4.1.1 installer
-export PATH="/home/fjk/anaconda3/bin:$PATH"
-# always source the LIVVkit environment initially
-source activate LIVVkit
-
-# NCL
-export NCARG_ROOT='/usr/local/ncl-6.1.2'
-export PATH=$NCARG_ROOT/bin:$PATH
-
-# PISM
-export PETSC_DIR='/home/fjk/Documents/Code/petsc-3.5.3'
-export PETSC_ARCH='linux_gnu_opt'
-export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
-export PATH=~/pism-dev/bin:$PATH
-
-# CISM
-export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
-
-###############################################################################
 # Aliases
 ###############################################################################
 
@@ -79,58 +57,58 @@ alias gojoserver='ssh joseph@jhkennedy.org'
 
 # General
 alias term='gnome-terminal'
-alias golearn='cd ~/Documents/Learn'
+alias golearn='cd $HOME/Documents/Learn'
 alias vim='vim -p'
 alias githash='git rev-parse --short HEAD'
 
 # Writing
-alias gowrite='cd ~/Documents/Writing'
-alias gocv='cd ~/Documents/Writing/CV'
-alias gopapers='cd ~/Documents/Writing/Papers'
-alias goproposals='cd ~/Documents/Writing/Proposals' 
-alias gographics='cd ~/Documents/Writing/Graphics'
-alias gothesis='cd ~/Documents/Writing/Thesis/Dissertation'
+alias gowrite='cd $HOME/Documents/Writing'
+alias gocv='cd $HOME/Documents/Writing/CV'
+alias gopapers='cd $HOME/Documents/Writing/Papers'
+alias goproposals='cd $HOME/Documents/Writing/Proposals' 
+alias gographics='cd $HOME/Documents/Writing/Graphics'
+alias gothesis='cd $HOME/Documents/Writing/Thesis/Dissertation'
 
-alias gopismfevor='cd ~/Documents/Writing/Papers/PISM-FEvoR'
-alias golivv-paper='cd ~/Documents/Writing/Papers/LIVVkit'
+alias gopismfevor='cd $HOME/Documents/Writing/Papers/PISM-FEvoR'
+alias golivv-paper='cd $HOME/Documents/Writing/Papers/LIVVkit'
 
-alias goldrd='cd ~/Documents/Writing/Proposals/LDRD'
-alias goabm='cd ~/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
+alias goldrd='cd $HOME/Documents/Writing/Proposals/LDRD'
+alias goabm='cd $HOME/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
 
 alias makepdf='./makepdf'
 
 
 # Coding
-alias gocode='cd ~/Documents/Code'
+alias gocode='cd $HOME/Documents/Code'
 alias make='make -j 3'
 
-alias godocs='cd ~/Documents/Docs'
+alias godocs='cd $HOME/Documents/Docs'
 
 # Experiments
-alias goexperiments='cd ~/Documents/Experiments'
-alias goinitmip='cd ~/Documents/Experiments/ISMIP6/initMIP'
+alias goexperiments='cd $HOME/Documents/Experiments'
+alias goinitmip='cd $HOME/Documents/Experiments/ISMIP6/initMIP'
 
 # Data
-alias godata='cd ~/Documents/Data'
-alias goiceice='cd ~/Documents/Data/IceIceData'
+alias godata='cd $HOME/Documents/Data'
+alias goiceice='cd $HOME/Documents/Data/IceIceData'
 
 # FEvoR
-alias gofevor='cd ~/Documents/Code/fevor'
+alias gofevor='cd $HOME/Documents/Code/fevor'
 
 # CISM
-alias gocism-public='cd ~/Documents/Code/cism-pub'
-alias gocism='cd ~/Documents/Code/cism-dev'
-alias gobats='cd ~/Documents/Code/cism-dev/tests/regression'
-alias gocism-manual='cd ~/Documents/Docs/cism-documentation'
+alias gocism-public='cd $HOME/Documents/Code/cism-pub'
+alias gocism='cd $HOME/Documents/Code/cism-dev'
+alias gobats='cd $HOME/Documents/Code/cism-dev/tests/regression'
+alias gocism-manual='cd $HOME/Documents/Docs/cism-documentation'
 
-alias golivv='cd ~/Documents/Code/livv-dev'
-alias golivv-nightly='cd ~/Documents/Code/livv-nightly'
-alias golivv-public='cd ~/Documents/Code/livv-pub'
+alias golivv='cd $HOME/Documents/Code/livv-dev'
+alias golivv-nightly='cd $HOME/Documents/Code/livv-nightly'
+alias golivv-public='cd $HOME/Documents/Code/livv-pub'
 
-alias gocism-data='cd ~/Documents/Code/cism-data'
+alias gocism-data='cd $HOME/Documents/Code/cism-data'
 
 # PISM
-alias gopism='cd ~/Documents/Code/pism'
+alias gopism='cd $HOME/Documents/Code/pism'
 
 # ORNL OLCF systems
 alias gotitan='ssh kennedy@titan.ccs.ornl.gov' # Cray XK7
@@ -148,9 +126,41 @@ alias goyellowstone='ssh -X -l kennedy yellowstone.ucar.edu'
 alias godesk='ssh -Y pc0101123.ornl.gov'
 
 # ORNL network
-alias corkon='cp ~/.ssh/config.bak ~/.ssh/config'
-alias corkoff='echo " " > ~/.ssh/config'
+alias corkon='cp $HOME/.ssh/config.bak $HOME/.ssh/config'
+alias corkoff='echo " " > $HOME/.ssh/config'
 
 # Blizzard
 alias goblizzard='ssh -Y blizzard.ornl.gov'
+
+###############################################################################
+# Path Exports
+###############################################################################
+
+# NCL
+export NCARG_ROOT='/usr/local/ncl-6.1.2'
+export PATH=$NCARG_ROOT/bin:$PATH
+
+# PISM
+export PETSC_DIR='/home/fjk/PETSc/petsc-3.7.4'
+export PETSC_ARCH='linux_gnu_opt'
+export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
+export PATH=$HOME/pism-dev/bin:$PATH
+
+# CISM
+export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
+
+#-------------------------------------------------------------------------------
+#WARNING: all paths must be exported before activating a anaconda environment,
+#         else they will only exist within that environment!`source deactivate`
+#         will reset the path to what it was before `sorce activate` was run the
+#         first time!
+#-------------------------------------------------------------------------------
+# create a base path of pre-anaconda paths
+export NOCONDA_PATH=$PATH
+
+# added by Anaconda3 4.1.1 installer
+export PATH="/home/fjk/anaconda3/bin:$PATH"
+export YESCONDA_PATH=$PATH
+# always source the LIVVkit environment initially
+source activate LIVVkit
 

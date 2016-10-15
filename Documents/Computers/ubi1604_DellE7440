@@ -43,6 +43,7 @@ sudo apt-get install -y bzr bzr-doc
 sudo apt-get install -y mercurial 
 sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
+sudo apt-get install -y valgrind
 
 # diffuse
 # -------
