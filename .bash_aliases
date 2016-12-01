@@ -47,6 +47,7 @@ function findpy () {
 ###############################################################################
 # Aliases
 ###############################################################################
+alias act='. deactivate && . activate' 
 
 alias pytree='tree -I __pycache__'
 #alias findcodelines='find ./ -iname "*.py" | xargs wc -l'
@@ -118,6 +119,7 @@ alias godtn='ssh kennedy@dtn.ccs.ornl.gov'     # data transfer nodes
 
 # NERSC systems
 alias gocori='ssh kennedyj@cori.nersc.gov'
+alias goedison='ssh kennedyj@edison.nersc.gov'
 
 # NCAR systems
 alias goyellowstone='ssh -X -l kennedy yellowstone.ucar.edu'
