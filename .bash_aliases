@@ -47,6 +47,8 @@ function findpy () {
 ###############################################################################
 # Aliases
 ###############################################################################
+alias nchead='ncdump -h'
+
 alias act='. deactivate && . activate' 
 
 alias pytree='tree -I __pycache__'
