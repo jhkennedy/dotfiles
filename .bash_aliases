@@ -44,6 +44,11 @@ function findpy () {
     eval find "$1" -iname \"*.py\" -exec grep --color=always -Hin "$2" {} \\\;
 }
 
+function findlivv () {
+    eval find "$1" -iname \"*.py\" -exec grep --color=always -Hin "$2" {} \\\;
+    eval find "$1" -iname \"*livv\" -exec grep --color=always -Hin "$2" {} \\\;
+}
+
 ###############################################################################
 # Aliases
 ###############################################################################
