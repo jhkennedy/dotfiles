@@ -110,11 +110,14 @@ alias gocism='cd $HOME/Documents/Code/cism-dev'
 alias gobats='cd $HOME/Documents/Code/cism-dev/tests/regression'
 alias gocism-manual='cd $HOME/Documents/Docs/cism-documentation'
 
+alias gocism-data='cd $HOME/Documents/Code/cism-data'
+
+#LIVVkit
 alias golivv='cd $HOME/Documents/Code/livv-dev'
 alias golivv-nightly='cd $HOME/Documents/Code/livv-nightly'
 alias golivv-public='cd $HOME/Documents/Code/livv-pub'
 
-alias gocism-data='cd $HOME/Documents/Code/cism-data'
+alias goeve='cd $HOME/Documents/Code/eve'
 
 # PISM
 alias gopism='cd $HOME/Documents/Code/pism'
