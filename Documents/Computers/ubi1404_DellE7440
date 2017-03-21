@@ -38,11 +38,11 @@ sudo apt-get install -y python-scipy python-sphinx python-pyproj python-netcdf p
 sudo apt-get install -y python-bs4
 sudo apt-get install -y python-pandas
 sudo -E pip install doxypy
-sudo apt-get install -y bzr bzr-doc
-    # Version control system (my pref)
 sudo apt-get install -y git git-doc 
+wget https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh && sudo bash script.deb.sh
+sudo apt-get install -y git-lfs
 sudo apt-get install -y mercurial 
-    # Version control system (most popular)
+sudo apt-get install -y bzr bzr-doc
 sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
 #
@@ -200,3 +200,6 @@ sudo apt-get autoremove
   # git checkout -t origin/ORNL
   # git reset --hard HEAD
 # WARNING: this will wipe any current information in the tracked files. BE SURE THIS IS WHAT YOU WANT TO DO.
+#
+# Now, setup LFS support
+  # git lfs install
