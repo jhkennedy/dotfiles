@@ -62,7 +62,6 @@ alias pytree='tree -I __pycache__'
 # My server
 alias gojoserver='ssh joseph@jhkennedy.org'
 
-
 # General
 alias term='gnome-terminal'
 alias golearn='cd $HOME/Documents/Learn'
@@ -84,9 +83,6 @@ alias golivv-paper='cd $HOME/Documents/Writing/Papers/LIVVkit'
 alias goldrd='cd $HOME/Documents/Writing/Proposals/LDRD'
 alias goabm='cd $HOME/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
 
-alias makepdf='./makepdf'
-
-
 # Coding
 alias gocode='cd $HOME/Documents/Code'
 alias make='make -j 3'
@@ -105,19 +101,22 @@ alias goiceice='cd $HOME/Documents/Data/IceIceData'
 alias gofevor='cd $HOME/Documents/Code/fevor'
 
 # CISM
-alias gocism-public='cd $HOME/Documents/Code/cism-pub'
-alias gocism='cd $HOME/Documents/Code/cism-dev'
-alias gobats='cd $HOME/Documents/Code/cism-dev/tests/regression'
+alias gocism-public='cd $HOME/Documents/Code/CISM/cism-pub'
+alias gocism='cd $HOME/Documents/Code/CISM/cism-dev'
+alias gocism-bats='cd $HOME/Documents/Code/CISM/cism-dev/tests/regression'
 alias gocism-manual='cd $HOME/Documents/Docs/cism-documentation'
 
 alias gocism-data='cd $HOME/Documents/Code/cism-data'
 
 #LIVVkit
-alias golivv='cd $HOME/Documents/Code/livv-dev'
-alias golivv-nightly='cd $HOME/Documents/Code/livv-nightly'
-alias golivv-public='cd $HOME/Documents/Code/livv-pub'
+alias golivv='cd $HOME/Documents/Code/LIVVkit/livv-dev'
+alias golivv-nightly='cd $HOME/Documents/Code/LIVVkit/livv-nightly'
+alias golivv-public='cd $HOME/Documents/Code/LIVVkit/livv-pub'
 
-alias goeve='cd $HOME/Documents/Code/eve'
+alias gobats='cd $HOME/Documents/Code/LIVVkit/BATS'
+
+# EVE
+alias goeve='cd $HOME/Documents/Code/EVE/eve'
 
 # PISM
 alias gopism='cd $HOME/Documents/Code/pism'
