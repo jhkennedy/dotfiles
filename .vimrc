@@ -105,3 +105,9 @@ augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
+
+" Use pathogen to manage vim bundles
+execute pathogen#infect()
+
+" Autocheck python code with Flake8 on write
+autocmd BufWritePost *.py call Flake8()
