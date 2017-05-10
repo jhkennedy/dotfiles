@@ -22,6 +22,12 @@ function mdo () {
 }
 complete -f -o plusdirs -X '!*.md' mdo
 
+# function to view reStructuredText in the console
+function rsto () {
+    pandoc "$1" -f rst -t html | lynx -stdin
+}
+complete -f -o plusdirs -X '!*.rst' rsto
+
 # funtion to make a directory and move into it
 function gomkdir () {
     mkdir "$1" && cd "$1"
