@@ -110,4 +110,5 @@ augroup END
 execute pathogen#infect()
 
 " Autocheck python code with Flake8 on write
-autocmd BufWritePost *.py call Flake8()
+" autocmd BufWritePost *.py call Flake8()
+" omg, so annoying...
