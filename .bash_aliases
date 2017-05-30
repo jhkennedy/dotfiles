@@ -124,6 +124,9 @@ alias gobats='cd $HOME/Documents/Code/LIVVkit/BATS'
 # EVE
 alias goeve='cd $HOME/Documents/Code/EVE/eve'
 
+# collabMe
+alias gocollab='cd $HOME/Documents/Code/collabMe'
+
 # PISM
 alias gopism='cd $HOME/Documents/Code/pism'
 
