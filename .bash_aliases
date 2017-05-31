@@ -55,6 +55,14 @@ function findlivv () {
     eval find "$1" -iname \"*livv\" -exec grep --color=always -Hin "$2" {} \\\;
 }
 
+# functions to remember things
+function howdiffpdf () {
+    echo "git show 67d454d:main.flt > old.tex"
+    echo "git show ee39374:main.flt > new.tex"
+    echo "latexdiff old.tex new.tex > diff.tex"
+    echo "pdflatex diff.tex"
+}
+
 ###############################################################################
 # Aliases
 ###############################################################################
