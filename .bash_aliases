@@ -125,8 +125,9 @@ alias gocism-data='cd $HOME/Documents/Code/cism-data'
 #LIVVkit
 alias golivv='cd $HOME/Documents/Code/LIVVkit/livv-dev'
 alias golivv-nightly='cd $HOME/Documents/Code/LIVVkit/livv-nightly'
-alias golivv-public='cd $HOME/Documents/Code/LIVVkit/livv-pub'
+alias golivv-clean='cd $HOME/Documents/Code/LIVVkit/livv-clean'
 
+alias goatlas='cd $HOME/Documents/Code/LIVVkit/Atlas'
 alias gobats='cd $HOME/Documents/Code/LIVVkit/BATS'
 
 # EVE
