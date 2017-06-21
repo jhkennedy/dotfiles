@@ -118,3 +118,8 @@ if [ -f /usr/bin/keychain ]; then
     /usr/bin/keychain --quiet $HOME/.ssh/id_rsa 
     source $HOME/.keychain/${HOSTNAME}-sh
 fi
+
+# start a tmux session
+if command -v tmux>/dev/null; then
+    [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
