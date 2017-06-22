@@ -100,6 +100,7 @@ alias goabm='cd $HOME/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
 # Coding
 alias gocode='cd $HOME/Documents/Code'
 alias make='make -j 3'
+alias tsw='tmux switch -t'
 
 alias godocs='cd $HOME/Documents/Docs'
 
