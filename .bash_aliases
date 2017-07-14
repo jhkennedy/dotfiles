@@ -101,10 +101,11 @@ alias goabm='cd $HOME/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
 alias gocode='cd $HOME/Documents/Code'
 alias make='make -j 3'
 
-alias tsw='tmux switch -t'
-alias trm='tmux kill-session -t'
-alias tmv='tmux rename-session -t'
 alias tls='tmux ls'
+alias tmk='tmux new -s'
+alias tsw='tmux switch -t'
+alias tmv='tmux rename-session -t'
+alias trm='tmux kill-session -t'
 
 alias godocs='cd $HOME/Documents/Docs'
 
@@ -127,7 +128,11 @@ alias gocism-manual='cd $HOME/Documents/Docs/cism-documentation'
 
 alias gocism-data='cd $HOME/Documents/Code/cism-data'
 
-#LIVVkit
+# ACME
+alias goacme='cd $HOME/Documents/Code/ACME'
+alias gocime='cd $HOME/Documents/Code/ACME/cime'
+
+# LIVVkit
 alias golivv='cd $HOME/Documents/Code/LIVVkit/livv-dev'
 alias golivv-nightly='cd $HOME/Documents/Code/LIVVkit/livv-nightly'
 alias golivv-clean='cd $HOME/Documents/Code/LIVVkit/livv-clean'
@@ -137,6 +142,7 @@ alias gobats='cd $HOME/Documents/Code/LIVVkit/BATS'
 
 # EVE
 alias goeve='cd $HOME/Documents/Code/EVE/eve'
+alias gosalil='cd $HOME/Documents/Code/EVE/Salil'
 
 # collabMe
 alias gocollab='cd $HOME/Documents/Code/collabMe'
