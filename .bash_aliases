@@ -163,7 +163,7 @@ alias gocori='ssh kennedyj@cori.nersc.gov'
 alias goedison='ssh kennedyj@edison.nersc.gov'
 
 # NCAR systems
-alias goyellowstone='ssh -X -l kennedy yellowstone.ucar.edu'
+alias gocheyenne='ssh -X -l kennedy cheyenne.ucar.edu'
 
 # ORNL Desktop
 alias godesk='ssh -Y pc0101123.ornl.gov'
