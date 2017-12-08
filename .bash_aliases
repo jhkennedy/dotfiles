@@ -66,6 +66,8 @@ function howdiffpdf () {
 ###############################################################################
 # Aliases
 ###############################################################################
+alias which='command -v'
+
 alias nchead='ncdump -h'
 
 alias act='. deactivate && . activate' 
