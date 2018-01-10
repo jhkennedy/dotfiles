@@ -141,6 +141,7 @@ alias golivv-clean='cd $HOME/Documents/Code/LIVVkit/livv-clean'
 
 alias goatlas='cd $HOME/Documents/Code/LIVVkit/Atlas'
 alias gobats='cd $HOME/Documents/Code/LIVVkit/BATS'
+alias golex='cd $HOME/Documents/Code/LIVVkit/lex-dev'
 
 # EVE
 alias goeve='cd $HOME/Documents/Code/EVE/eve'
