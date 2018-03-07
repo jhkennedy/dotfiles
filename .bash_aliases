@@ -208,3 +208,5 @@ export YESCONDA_PATH=$PATH
 # always source the LIVVkit environment initially
 source activate LIVVkit
 
+# FIX GLib-GIO memory message: https://github.com/conda-forge/glib-feedstock/issues/19 
+export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
