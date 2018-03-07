@@ -155,7 +155,7 @@ alias gopism='cd $HOME/Documents/Code/pism'
 
 # ORNL OLCF systems
 alias gotitan='ssh kennedy@titan.ccs.ornl.gov' # Cray XK7
-alias gorhea='ssh kennedy@rhea.ccs.ornl.gov'   # general purpose cluster
+alias gorhea='ssh -X kennedy@rhea.ccs.ornl.gov'   # general purpose cluster
 alias goccs='ssh kennedy@home.ccs.ornl.gov'    # general purpose server
 alias godtn='ssh kennedy@dtn.ccs.ornl.gov'     # data transfer nodes
 
