@@ -103,11 +103,11 @@ alias goabm='cd $HOME/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
 alias gocode='cd $HOME/Documents/Code'
 alias make='make -j 3'
 
-alias tls='tmux ls'
-alias tmk='tmux new -s'
-alias tsw='tmux switch -t'
-alias tmv='tmux rename-session -t'
-alias trm='tmux kill-session -t'
+# alias tls='tmux ls'
+# alias tmk='tmux new -s'
+# alias tsw='tmux switch -t'
+# alias tmv='tmux rename-session -t'
+# alias trm='tmux kill-session -t'
 
 alias godocs='cd $HOME/Documents/Docs'
 

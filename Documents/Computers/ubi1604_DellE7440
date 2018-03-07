@@ -34,7 +34,7 @@ sudo apt-get install -y tomboy
 
 # prorgraming stuff
 # -----------------
-sudo apt-get install -y tmux
+# sudo apt-get install -y tmux
 sudo apt-get install -y build-essential cvs vim-gnome cmake cmake-curses-gui
 # make gvim defualt text editor -- edit to suit your preferences. 
 sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list 

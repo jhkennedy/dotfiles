@@ -119,25 +119,25 @@ if [ -f /usr/bin/keychain ]; then
     source $HOME/.keychain/${HOSTNAME}-sh
 fi
 
-# start a tmux session
-if command -v tmux>/dev/null; then
-    if [[ ! $TERM =~ screen ]] && [ -z $TMUX ]; then
-        if tmux has-session 2>/dev/null; then
-            exec tmux attach
-        else
-            exec tmux
-        fi
-    fi
-    if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
-        tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
-    fi
-fi
-
-# detach from tmux on exit instead of kill
-exit() {
-    if [[ -z $TMUX ]]; then
-        builtin exit
-    else
-        tmux detach
-    fi
-}
+# # start a tmux session
+# if command -v tmux>/dev/null; then
+#     if [[ ! $TERM =~ screen ]] && [ -z $TMUX ]; then
+#         if tmux has-session 2>/dev/null; then
+#             exec tmux attach
+#         else
+#             exec tmux
+#         fi
+#     fi
+#     if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
+#         tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+#     fi
+# fi
+# 
+# # detach from tmux on exit instead of kill
+# exit() {
+#     if [[ -z $TMUX ]]; then
+#         builtin exit
+#     else
+#         tmux detach
+#     fi
+# }
