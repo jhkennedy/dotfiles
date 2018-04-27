@@ -63,6 +63,11 @@ function howdiffpdf () {
     echo "pdflatex diff.tex"
 }
 
+function howtee () {
+    echo "command > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)"
+    echo "see: https://stackoverflow.com/questions/692000"
+}
+
 ###############################################################################
 # Aliases
 ###############################################################################
