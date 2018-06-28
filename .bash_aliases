@@ -99,7 +99,6 @@ alias gographics='cd $HOME/Documents/Writing/Graphics'
 alias gothesis='cd $HOME/Documents/Writing/Thesis/Dissertation'
 
 alias gopismfevor='cd $HOME/Documents/Writing/Papers/PISM-FEvoR'
-alias golivv-paper='cd $HOME/Documents/Writing/Papers/LIVVkit'
 
 alias goldrd='cd $HOME/Documents/Writing/Proposals/LDRD'
 alias goabm='cd $HOME/Documents/Writing/Proposals/DOE/2016_ABM/Proposal'
