@@ -206,8 +206,8 @@ export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
 # create a base path of pre-anaconda paths
 export NOCONDA_PATH=$PATH
 
-# added by Anaconda3 4.1.1 installer
-export PATH="/home/fjk/anaconda3/bin:$PATH"
+# added by Miniconda3 installer
+export PATH="/home/fjk/miniconda3/bin:$PATH"
 export YESCONDA_PATH=$PATH
 # always source the LIVVkit environment initially
 source activate LIVVkit
