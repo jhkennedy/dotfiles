@@ -17,6 +17,7 @@
     autocrlf = input
     whitespace = trailing-space
 	excludesfile = /home/fjk/.gitignore_global
+	editor = vim
 [diff]
 	tool = meld
 [difftool]
