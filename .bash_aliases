@@ -75,7 +75,7 @@ alias which='command -v'
 
 alias nchead='ncdump -h'
 
-alias act='. deactivate && . activate' 
+alias act='conda deactivate && conda activate'
 
 alias pytree='tree -I __pycache__'
 #alias findcodelines='find ./ -iname "*.py" | xargs wc -l'
