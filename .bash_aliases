@@ -197,20 +197,9 @@ export PATH=$HOME/pism-dev/bin:$PATH
 # CISM
 export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
 
-#-------------------------------------------------------------------------------
-#WARNING: all paths must be exported before activating a anaconda environment,
-#         else they will only exist within that environment!`source deactivate`
-#         will reset the path to what it was before `sorce activate` was run the
-#         first time!
-#-------------------------------------------------------------------------------
-# create a base path of pre-anaconda paths
-export NOCONDA_PATH=$PATH
-
-# added by Miniconda3 installer
-export PATH="/home/fjk/miniconda3/bin:$PATH"
-export YESCONDA_PATH=$PATH
-# always source the LIVVkit environment initially
-source activate LIVVkit
+# Conda 4.4+ reccomended way of enabling conda in bash
+. $HOME/miniconda3/etc/profile.d/conda.sh
+conda activate LIVVkit
 
 # FIX GLib-GIO memory message: https://github.com/conda-forge/glib-feedstock/issues/19 
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
