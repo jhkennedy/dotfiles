@@ -185,17 +185,17 @@ alias goblizzard='ssh -Y blizzard.ornl.gov'
 ###############################################################################
 
 # NCL
-export NCARG_ROOT='/usr/local/ncl-6.1.2'
-export PATH=$NCARG_ROOT/bin:$PATH
+# export NCARG_ROOT='/usr/lib/ncarg'
+# export PATH=$NCARG_ROOT/bin:$PATH
 
 # PISM
-export PETSC_DIR='/home/fjk/PETSc/petsc-3.7.4'
-export PETSC_ARCH='linux_gnu_opt'
-export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
-export PATH=$HOME/pism-dev/bin:$PATH
+# export PETSC_DIR='/home/fjk/PETSc/petsc-3.7.4'
+# export PETSC_ARCH='linux_gnu_opt'
+# export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
+# export PATH=$HOME/pism-dev/bin:$PATH
 
 # CISM
-export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
+# export CISM_TRILINOS_DIR='/usr/local/trilinos-11.10.2-Install'
 
 # Conda 4.4+ reccomended way of enabling conda in bash
 . $HOME/miniconda3/etc/profile.d/conda.sh
