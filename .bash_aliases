@@ -80,9 +80,6 @@ alias act='conda deactivate && conda activate'
 alias pytree='tree -I __pycache__'
 #alias findcodelines='find ./ -iname "*.py" | xargs wc -l'
 
-# My server
-alias gojoserver='ssh joseph@jhkennedy.org'
-
 # General
 alias term='gnome-terminal'
 alias golearn='cd $HOME/Documents/Learn'
