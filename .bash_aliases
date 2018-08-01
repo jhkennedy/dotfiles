@@ -131,9 +131,9 @@ alias gocism-manual='cd $HOME/Documents/Docs/cism-documentation'
 
 alias gocism-data='cd $HOME/Documents/Code/cism-data'
 
-# ACME
-alias goacme='cd $HOME/Documents/Code/ACME'
-alias gocime='cd $HOME/Documents/Code/ACME/cime'
+# E3SM
+alias goe3sm='cd $HOME/Documents/Code/E3SM/E3SM'
+alias gocime='cd $HOME/Documents/Code/E3SM/cime'
 
 # LIVVkit
 alias golivv='cd $HOME/Documents/Code/LIVVkit/livv-dev'
