@@ -67,7 +67,7 @@ set lazyredraw      " redraw only when we need to.
 
 
 " a nice dark colorscheme
-colorscheme joe_dark
+colorscheme darcula
 
 " enable spellcheck (turn off wtih :set nospell)
 "set spell spelllang=en_us
