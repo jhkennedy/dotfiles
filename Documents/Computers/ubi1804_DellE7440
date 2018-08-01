@@ -25,7 +25,6 @@ sudo apt-get install -y ppa-purge
 
 # Media stuff
 # -----------
-sudo apt-get install -y ttf-liberation flashplugin-installer
 sudo apt-get install -y ubuntu-restricted-addons ubuntu-restricted-extras
 
 # prorgraming stuff
@@ -43,6 +42,7 @@ sudo apt-get install -y mercurial
 sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
 sudo apt-get install -y valgrind
+sudo apt-get install -y meld
 
 # diffuse
 # -------
@@ -76,12 +76,12 @@ sudo apt-get install -y libcgal-dev
 # units is a command line unit converter
 sudo apt-get install -y gnuplot units graphviz
 sudo apt-get install -y gdal-bin
-sudo apt-get install -y libgdal1-dev libfftw3-dev libpcre3-dev graphicsmagick subversion
+sudo apt-get install -y libgdal-dev libfftw3-dev libpcre3-dev graphicsmagick subversion
 sudo apt-get install -y ncl-ncarg ferret-vis libbz2-dev libcairo2-dev xorg-dev
 sudo apt-get install -y octave
 sudo apt-get install -y texlive-full bibtex2html latexdiff diffpdf perl-doc
 # for digitizing plots
-sudo apt-get install -y autotrace engauge-digitizer 
+sudo apt-get install -y engauge-digitizer 
 sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers flex
 sudo apt-get install -y libnetcdf-dev libnetcdff-dev netcdf-bin netcdf-doc nco ncview
 sudo apt-get install -y libblas-dev
@@ -131,16 +131,15 @@ sudo apt-get install -y gnome-tweaks
 
 # Snaps
 sudo snap install pycharm-professional --classic
-sudo snap install slack --clasic
+sudo snap install slack --classic
 sudo snap install discord
 
 
-# Weather and system monitor indicators
-# -------------------------------------
-#sudo add-apt-repository ppa:atareao/atareao
-#sudo apt-get update
-#sudo apt-get install -y my-weather-indicator
-#sudo apt-get install -y indicator-multiload
+# Gnome shell exensions
+# ---------------------
+sudo apt-get install -y chrome-gnome-shell 
+sudo apt-get install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0 gir1.2-clutter-1.0
+
 
 # Fitbit sync
 # -----------
@@ -171,37 +170,42 @@ sudo apt-get autoremove
 # -----------------------------------------------------------------------------
 # Software to build (see notes above):
 # -----------------------------------------------------------------------------
-# PETSc                     -
-# PISM                      -
-# Trilinos                  - <-- see notes above
-# CISM                      -
-# GMT                       - <-- see notes above
+# PETSc                     o
+# PISM                      o
+# Trilinos                  o <-- see notes above
+# CISM                      o
+# GMT                       o <-- see notes above
 
 
 # -----------------------------------------------------------------------------
 # Other things to Install:
 # -----------------------------------------------------------------------------
-#    Synergy (paid)         x -- ubi installer crashes; use deb right now
-#    Anaconda3              x
-#    Mendeley               x
-#    GoogleChrome           x
+# Synergy (paid)            x -- ubi installer crashes; use deb right now
+# Miniconda3                x
+# Mendeley                  x
+# GoogleChrome              x
+# extensions.gnome.org/     -
+#     put windows           -
+#     open weather          -
+#     system-monitor        -
+# github.com/karan/joe      -
 
 
 # -----------------------------------------------------------------------------
 # To configure after install:
 # -----------------------------------------------------------------------------
-# Citrix                    x <-- see citrix guide
+# Citrix                    - <-- see citrix guide
 # dotfiles.git              x <-- see notes below
 # Unison                    - <-- Example in dotfiles.git
 # Mendeley                  x
 # Firefox Sync              x
-# launch weather indicator  ?
-# launch sysmonitor indic.  ?
+# extensions.gnom.org/      x
 # gnome-tweaks              x
 # diffuse                   x <-- see notes above
 # Pycharm                   x <-- should probably automate this... 
 # Slack                     x
 # Discord                   x
+# numlock on always         o <-- see https://askubuntu.com/questions/977903/how-do-i-turn-numlock-on-for-login-screen-ubuntu-17-10-wayland
 
 
 # -----------------------------------------------------------------------------

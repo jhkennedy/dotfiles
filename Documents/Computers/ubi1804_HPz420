@@ -194,7 +194,7 @@ sudo apt-get autoremove
 # -----------------------------------------------------------------------------
 # To configure after install:
 # -----------------------------------------------------------------------------
-# Citrix                    ? <-- see ORNL citrix guide
+# Citrix                    x <-- see ORNL citrix guide
 # dotfiles.git              x <-- see notes below
 # Unison                    o <-- Example in dotfiles.git
 # Mendeley                  x
