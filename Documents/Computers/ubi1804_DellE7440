@@ -184,22 +184,22 @@ sudo apt-get autoremove
 # Miniconda3                x
 # Mendeley                  x
 # GoogleChrome              x
-# extensions.gnome.org/     -
-#     put windows           -
-#     open weather          -
-#     system-monitor        -
-# github.com/karan/joe      -
+# extensions.gnome.org/     x
+#     put windows           x
+#     open weather          x
+#     system-monitor        x
+# github.com/karan/joe      x
 
 
 # -----------------------------------------------------------------------------
 # To configure after install:
 # -----------------------------------------------------------------------------
-# Citrix                    - <-- see citrix guide
+# Citrix                    x <-- see citrix guide
 # dotfiles.git              x <-- see notes below
 # Unison                    - <-- Example in dotfiles.git
 # Mendeley                  x
 # Firefox Sync              x
-# extensions.gnom.org/      x
+# extensions.gnome.org/     x
 # gnome-tweaks              x
 # diffuse                   x <-- see notes above
 # Pycharm                   x <-- should probably automate this... 
