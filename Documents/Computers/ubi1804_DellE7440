@@ -129,6 +129,9 @@ sudo apt-get install -y dconf-tools gconf-editor
 # Gnome settings and tweaks
 sudo apt-get install -y gnome-tweaks
 
+# Keychain to hold RSA keys in memory
+sudo apt-get install -y keychain
+
 # Snaps
 sudo snap install pycharm-professional --classic
 sudo snap install slack --classic
