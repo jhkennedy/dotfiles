@@ -208,7 +208,7 @@ sudo apt-get autoremove
 # Pycharm                   x <-- should probably automate this... 
 # Slack                     x
 # Discord                   x
-# numlock on always         o <-- see https://askubuntu.com/questions/977903/how-do-i-turn-numlock-on-for-login-screen-ubuntu-17-10-wayland
+# numlock on always         x <-- see https://askubuntu.com/questions/977903/how-do-i-turn-numlock-on-for-login-screen-ubuntu-17-10-wayland
 
 
 # -----------------------------------------------------------------------------
