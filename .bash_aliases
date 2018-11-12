@@ -64,8 +64,11 @@ function howdiffpdf () {
 }
 
 function howtee () {
-    echo "command > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)"
+    echo "command > >(tee -a command.out) 2> >(tee -a command.err >&2)"
     echo "see: https://stackoverflow.com/questions/692000"
+    echo ""
+    echo "To incriment:"
+    echo '$((t_i++)); command > >(tee -a command_${t_i}.out) 2> >(tee -a command_${t_i}.err >&2)'
 }
 
 ###############################################################################
