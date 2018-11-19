@@ -170,6 +170,9 @@ alias goedison='ssh kennedyj@edison.nersc.gov'
 # NCAR systems
 alias gocheyenne='ssh -X -l kennedy cheyenne.ucar.edu'
 
+# Argonne's LCRC systems
+alias goanvil='ssh -Y -l kennedy blues.lcrc.anl.gov'
+
 # ORNL Desktop
 alias godesk='ssh -Y pc0101123.ornl.gov'
 
