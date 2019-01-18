@@ -68,7 +68,7 @@ function howtee () {
     echo "see: https://stackoverflow.com/questions/692000"
     echo ""
     echo "To incriment:"
-    echo '$((t_i++)); command > >(tee -a command_${t_i}.out) 2> >(tee -a command_${t_i}.err >&2)'
+    echo '((t_i++)); command > >(tee -a command_${t_i}.out) 2> >(tee -a command_${t_i}.err >&2)'
 }
 
 ###############################################################################
