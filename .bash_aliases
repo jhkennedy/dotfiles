@@ -132,7 +132,7 @@ alias gocism='cd $HOME/Documents/Code/CISM/cism-dev'
 alias gocism-bats='cd $HOME/Documents/Code/CISM/cism-dev/tests/regression'
 alias gocism-manual='cd $HOME/Documents/Docs/cism-documentation'
 
-alias gocism-data='cd $HOME/Documents/Code/cism-data'
+alias gocism-data='cd $HOME/Documents/Code/CISM/cism-data'
 
 # E3SM
 alias goe3sm='cd $HOME/Documents/Code/E3SM/E3SM'
@@ -148,8 +148,8 @@ alias gobats='cd $HOME/Documents/Code/LIVVkit/BATS'
 alias golex='cd $HOME/Documents/Code/LIVVkit/lex-dev'
 
 # EVE
-alias goeve='cd $HOME/Documents/Code/EVE/eve'
-alias gosalil='cd $HOME/Documents/Code/EVE/Salil'
+alias goevv='cd $HOME/Documents/Code/EVV/evv'
+alias gosalil='cd $HOME/Documents/Code/EVV/Salil'
 
 # collabMe
 alias gocollab='cd $HOME/Documents/Code/collabMe'
