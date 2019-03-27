@@ -205,7 +205,6 @@ alias goblizzard='ssh -Y blizzard.ornl.gov'
 
 # Conda 4.4+ reccomended way of enabling conda in bash
 . $HOME/miniconda3/etc/profile.d/conda.sh
-conda activate LIVVkit
 
 # FIX GLib-GIO memory message: https://github.com/conda-forge/glib-feedstock/issues/19 
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
