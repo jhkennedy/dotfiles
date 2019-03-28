@@ -70,7 +70,7 @@ set lazyredraw      " redraw only when we need to.
 colorscheme darcula
 
 " enable spellcheck (turn off wtih :set nospell)
-"set spell spelllang=en_us
+set spell spelllang=en_us
 
 " show line numbers
 set number
