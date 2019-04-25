@@ -209,8 +209,10 @@ alias goblizzard='ssh -Y blizzard.ornl.gov'
 # FIX GLib-GIO memory message: https://github.com/conda-forge/glib-feedstock/issues/19 
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
 
+# add .local/bin to path
+export PATH=${PATH}:${HOME}/.local/bin
+
 ###############################################################################
 # Github authentication
 ###############################################################################
 export GPG_TTY=$(tty)
-
