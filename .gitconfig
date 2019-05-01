@@ -10,6 +10,7 @@
     author = log --graph --decorate --pretty=short --abbrev-commit --author-date-order
     up = fetch --all -p
     ff = pull --ff-only
+    subup = !git submodule sync && git submodule update --init
 [merge]
     summary = true
     ff = false
