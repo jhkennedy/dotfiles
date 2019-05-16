@@ -166,6 +166,7 @@ alias godtn='ssh kennedy@dtn.ccs.ornl.gov'     # data transfer nodes
 # NERSC systems
 alias gocori='ssh kennedyj@cori.nersc.gov'
 alias goedison='ssh kennedyj@edison.nersc.gov'
+alias sshproxy='sshproxy.sh -u kennedyj'
 
 # NCAR systems
 alias gocheyenne='ssh -X -l kennedy cheyenne.ucar.edu'
