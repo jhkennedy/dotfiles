@@ -44,6 +44,10 @@ sudo apt-get install -y colordiff
 sudo apt-get install -y valgrind
 sudo apt-get install -y meld
 
+# Zsh stuff
+-----------
+sudo apt-get install -y zsh powerline fonts-powerline
+
 # diffuse
 # -------
 # So, diffuse and anaconda don't play well together. Diffuse tries to import

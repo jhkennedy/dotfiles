@@ -4,6 +4,12 @@
 ###############################################################################
 # Useful functions
 ###############################################################################
+if [ ! -z "$ZSH_NAME" ]; then 
+    # zsh sets $ZSH_NAME variable so it can be used to detect zsh
+    # following enables using bash-completion under zsh
+    autoload bashcompinit
+    bashcompinit
+fi
 
 # function to open pdfs quietly. 
 function pdfo () {
