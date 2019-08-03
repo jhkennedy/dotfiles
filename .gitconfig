@@ -19,6 +19,8 @@
     whitespace = trailing-space
 	excludesfile = /home/fjk/.gitignore_global
 	editor = vim
+    trustctime = false
+    pager = less -F -X 
 [diff]
 	tool = meld
 [difftool]
