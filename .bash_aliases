@@ -202,7 +202,7 @@ alias goblizzard='ssh -Y blizzard.ornl.gov'
 # export PATH=$NCARG_ROOT/bin:$PATH
 
 # PISM
-# export PETSC_DIR='/home/fjk/PETSc/petsc-3.7.4'
+# export PETSC_DIR='/home/jhkennedy/PETSc/petsc-3.7.4'
 # export PETSC_ARCH='linux_gnu_opt'
 # export PATH=$PETSC_DIR/$PETSC_ARCH/bin/:$PATH
 # export PATH=$HOME/pism-dev/bin:$PATH

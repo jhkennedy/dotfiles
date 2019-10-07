@@ -1,6 +1,7 @@
 [user]
 	name = Joseph H Kennedy
 	email = me@jhkennedy.org
+	signingkey = 175B91504A99C555
 [push]
 	default = simple
 [ui]
@@ -17,7 +18,7 @@
 [core]
     autocrlf = input
     whitespace = trailing-space
-	excludesfile = /home/fjk/.gitignore_global
+	excludesfile = /home/jhkennedy/.gitignore_global
 	editor = vim
     trustctime = false
     pager = less -F -X 
