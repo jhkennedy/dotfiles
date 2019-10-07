@@ -226,5 +226,8 @@ sudo apt-get autoremove
   # git remote set-url origin git@github.com:jhkennedy/dotfiles.git
 # WARNING: this will wipe any current information in the tracked files. BE SURE THIS IS WHAT YOU WANT TO DO.
 #
+# Add the source code pro font to the fc-cache
+  # fc-cache -f -v .local/share/fonts/adobe-fonts/source-code-pro/ 
+#
 # Now, setup LFS support
   # git lfs install
