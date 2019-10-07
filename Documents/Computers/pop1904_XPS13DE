@@ -1,0 +1,230 @@
+#!/bin/bash
+# -----------------------------------------------------------------------------
+# FOR: Pop!_OS 19.04 on a Dell Loaner laptop for ASF
+# -----------------------------------------------------------------------------
+# script to install all the extra stuff I like in ~~Ubuntu~~ Pop!. When java
+# installs, you will need to accept the UELA. You may need to approve changes
+# from time to time (-y should take care of that). Make sure to read through
+# this list and comment out lines you do not want with a '#'. If it ever says
+# that it can't find a package, that whole line will not go, so delete that
+# package from line, and then re-run the script (it will not hurt to run this
+# more than once).
+# -----------------------------------------------------------------------------
+
+
+# proxy connections with ssh
+# --------------------------
+# sudo apt-get install -y corkscrew
+
+# Ubuntu stuff
+# ------------
+# sudo apt-get install -y ppa-purge
+
+# to be able to see windows partitions
+# ------------------------------------
+#sudo apt-get install -y ntfs-config # to see windows drive
+
+# Media stuff
+# -----------
+sudo apt-get install -y ubuntu-restricted-addons ubuntu-restricted-extras
+
+# prorgraming stuff
+# -----------------
+# sudo apt-get install -y tmux
+sudo apt-get install -y build-essential cvs vim cmake cmake-curses-gui
+# make gvim defualt text editor -- edit to suit your preferences. 
+#sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list 
+sudo apt-get install -y gedit-plugins doxygen
+sudo apt-get install -y git git-doc 
+# git LFS
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install -y git-lfs
+sudo apt-get install -y bzr bzr-doc
+sudo apt-get install -y mercurial 
+sudo apt-get install -y pandoc lynx
+sudo apt-get install -y colordiff
+sudo apt-get install -y valgrind
+sudo apt-get install -y meld
+
+# Zsh stuff
+# -----------
+sudo apt-get install -y zsh powerline fonts-powerline
+
+# diffuse
+# -------
+# So, diffuse and anaconda don't play well together. Diffuse tries to import
+# pygtk which is (very) unlikely to be available in your conda environment.
+# However, because diffuse installed through apt, pygtk will be available on
+# your system. To fix this, you can edit the diffuse script's hashbang line:
+#       vim /usr/bin/diffuse
+# and change
+#       #!/usr/bin/env python
+# to 
+#       #!/usr/bin/python2
+# This will force diffuse to use the system python. 
+# NOTE: Appears to be fixed in diffuse
+sudo apt-get install -y libcanberra-gtk-module
+sudo apt-get install -y diffuse
+
+
+# Fortran
+# -------
+sudo apt-get install -y gfortran
+
+# C++ Libraries
+# -------------
+# boost libraries: http://www.boost.org/ 
+sudo apt-get install -y libboost-all-dev libboost-doc
+# CGAL libraries: http://doc.cgal.org/
+sudo apt-get install -y libcgal-dev
+
+# Science stuff
+# -------------
+# units is a command line unit converter
+sudo apt-get install -y gnuplot units graphviz
+sudo apt-get install -y gdal-bin
+sudo apt-get install -y libgdal-dev libfftw3-dev libpcre3-dev graphicsmagick subversion
+sudo apt-get install -y ncl-ncarg ferret-vis libbz2-dev libcairo2-dev xorg-dev
+sudo apt-get install -y octave
+sudo apt-get install -y texlive-full bibtex2html latexdiff diffpdf perl-doc
+# for digitizing plots
+sudo apt-get install -y engauge-digitizer 
+sudo apt-get install -y libhdf5-dev hdf5-tools hdf5-helpers flex
+sudo apt-get install -y libnetcdf-dev libnetcdff-dev netcdf-bin netcdf-doc nco ncview
+sudo apt-get install -y libblas-dev
+sudo apt-get install -y openmpi-bin libopenmpi-dev
+sudo apt-get install -y liblapack-dev
+
+# PISM Dependencies
+# -----------------
+sudo apt-get install -y libgsl0-dev libudunits2-dev cdo libproj-dev libx11-dev
+
+# File stuff
+# ----------
+# see tree structure of subdirectories in terminal
+sudo apt-get install -y tree
+# file extraction
+sudo apt-get install -y p7zip-full
+# file sync program
+sudo apt-get install -y unison-all unison-gtk
+# cross platform FTP client 
+sudo apt-get install -y filezilla 
+# disk utility
+sudo apt-get install -y gparted 
+
+# Image stuff
+# -----------
+# gimp -> photoshop, 
+# inkscape -> illustrator, 
+# xournal -> annotates pdfs, 
+# icoutils -> .ico creator
+sudo apt-get install -y gimp inkscape xournal icoutils
+
+# Video Editor:
+# -------------
+sudo apt-get install -y openshot
+
+# java
+# ----
+sudo apt-get install -y default-jdk 
+
+# debian configuration tools
+# --------------------------
+# This is how you change the gedit-terminal colors! 
+#FIXME: sudo apt-get install -y dconf-tools gconf-editor
+
+# Gnome settings and tweaks
+sudo apt-get install -y gnome-tweaks
+
+# Keychain to hold RSA keys in memory
+sudo apt-get install -y keychain
+
+# Snaps
+sudo apt-get install -y snapd
+sudo snap install pycharm-professional --classic
+sudo snap install slack --classic
+sudo snap install discord
+sudo snap install mattermost-desktop --beta
+
+# Gnome shell exensions
+# ---------------------
+sudo apt-get install -y chrome-gnome-shell
+# for system-monitor
+sudo apt-get install -y gir1.2-gtop-2.0 gir1.2-networkmanager-1.0 gir1.2-clutter-1.0
+
+
+# GMT Generic Mapping tools -- build from source
+#     download source using:
+#     svn checkout svn://gmtserver.soest.hawaii.edu/gmt5/trunk gmt5-dev
+#     then follow build instructions
+
+# CISM Dependencies
+# -----------------
+# Will need Trilinos
+#     install from http://trilinos.org/
+#     this will take a lot of time to build. Seriously. 
+#     use CISM documentation to install.
+
+
+# -----------------------------------------------------------------------------
+# Clean up
+# -----------------------------------------------------------------------------
+sudo apt-get autoremove
+
+# Set up windows partition support
+# --------------------------------
+# sudo ntfs-config 
+
+# -----------------------------------------------------------------------------
+# Software to build (see notes above):
+# -----------------------------------------------------------------------------
+# PETSc                     -
+# PISM                      -
+# Trilinos                  - <-- see notes above
+# CISM                      -
+# GMT                       - <-- see notes above
+
+# -----------------------------------------------------------------------------
+# Other things to Install:
+# -----------------------------------------------------------------------------
+# Git-LFS                   x
+# Miniconda3                x
+# Mendeley                  x
+# extensions.gnome.org/     x
+#     gTile                 x
+#     open weather          x
+#     system-monitor        x
+#     AppindIcator Support  x
+# github.com/karan/joe      x
+
+
+# -----------------------------------------------------------------------------
+# To configure after install:
+# -----------------------------------------------------------------------------
+# dotfiles.git              x <-- see notes below
+# Mendeley                  x
+# Firefox Sync              x
+# extensions.gnom.org/      x
+# Pycharm                   x <-- should probably automate this... 
+# Slack                     x
+# Discord                   x
+# MatterMost                x 
+
+
+# -----------------------------------------------------------------------------
+# NOTES: 
+# -----------------------------------------------------------------------------
+# dotfiles.git setup
+# Normal git clone commands for the dotfiles.git repository will fail because you will be cloning into a non-empty
+# directory. In order to clone the repository you will need to:
+  # cd ~
+  # git init
+  # git remote add origin https://github.com/jhkennedy/dotfiles.git 
+  # git fetch
+  # git checkout -t -f origin/ASF
+  # git reset --hard HEAD
+  # git remote set-url origin git@github.com:jhkennedy/dotfiles.git
+# WARNING: this will wipe any current information in the tracked files. BE SURE THIS IS WHAT YOU WANT TO DO.
+#
+# Now, setup LFS support
+  # git lfs install
