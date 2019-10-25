@@ -56,11 +56,6 @@ function findpy () {
     eval find "$1" -iname \"*.py\" -exec grep --color=always -Hin "$2" {} \\\;
 }
 
-function findlivv () {
-    eval find "$1" -iname \"*.py\" -exec grep --color=always -Hin "$2" {} \\\;
-    eval find "$1" -iname \"*livv\" -exec grep --color=always -Hin "$2" {} \\\;
-}
-
 # functions to remember things
 function howdiffpdf () {
     echo "git show 67d454d:main.flt > old.tex"
@@ -163,15 +158,8 @@ alias gocollab='cd $HOME/Documents/Code/collabMe'
 # PISM
 alias gopism='cd $HOME/Documents/Code/pism'
 
-# ORNL OLCF systems
-alias gotitan='ssh kennedy@titan.ccs.ornl.gov' # Cray XK7
-alias gorhea='ssh -X kennedy@rhea.ccs.ornl.gov'   # general purpose cluster
-alias goccs='ssh kennedy@home.ccs.ornl.gov'    # general purpose server
-alias godtn='ssh kennedy@dtn.ccs.ornl.gov'     # data transfer nodes
-
 # NERSC systems
 alias gocori='ssh kennedyj@cori.nersc.gov'
-alias goedison='ssh kennedyj@edison.nersc.gov'
 alias sshproxy='sshproxy.sh -u kennedyj'
 
 # NCAR systems
@@ -182,16 +170,6 @@ alias goanvil='ssh -Y -l kennedy blues.lcrc.anl.gov'
 
 # LLNL Systems
 alias goacme1='ssh -Y -l kennedy52 acme1.llnl.gov'
-
-# ORNL Desktop
-alias godesk='ssh -Y pc0101123.ornl.gov'
-
-# ORNL network
-alias corkon='cp $HOME/.ssh/config.bak $HOME/.ssh/config'
-alias corkoff='echo " " > $HOME/.ssh/config'
-
-# Blizzard
-alias goblizzard='ssh -Y blizzard.ornl.gov'
 
 ###############################################################################
 # Path Exports
