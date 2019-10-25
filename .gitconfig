@@ -1,7 +1,7 @@
 [user]
 	name = Joseph H Kennedy
 	email = me@jhkennedy.org
-	signingkey = 175B91504A99C555
+	signingkey = 309C7CF5259225D4
 [push]
 	default = simple
 [ui]
@@ -33,3 +33,5 @@
 	required = true
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg2
