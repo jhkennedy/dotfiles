@@ -193,6 +193,8 @@ alias godev6='ssh -Y apd-dev6.asf.alaska.edu'
 
 # Conda 4.4+ reccomended way of enabling conda in bash
 . $HOME/miniconda3/etc/profile.d/conda.sh
+# BECUASE CONDA IS STUPID!!! See: https://github.com/AnacondaRecipes/aggregate/issues/151
+alias fixhost='export HOST=$(hostname)'
 
 # FIX GLib-GIO memory message: https://github.com/conda-forge/glib-feedstock/issues/19 
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
