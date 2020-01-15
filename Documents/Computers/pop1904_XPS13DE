@@ -27,6 +27,8 @@
 # Media stuff
 # -----------
 sudo apt-get install -y ubuntu-restricted-addons ubuntu-restricted-extras
+# flameshot screenshot editor
+sudo apt-get install -y flameshot
 
 # prorgraming stuff
 # -----------------
@@ -196,7 +198,9 @@ sudo apt-get autoremove
 #     system-monitor        x
 #     AppindIcator Support  x
 # github.com/karan/joe      x
-
+# signal-desktop            x <-- could be added to script next round!
+# printunl-client-electron  x <-- could be added to script next round!
+# docker                    x <-- could be added to script next round!
 
 # -----------------------------------------------------------------------------
 # To configure after install:
