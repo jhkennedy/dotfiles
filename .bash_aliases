@@ -57,7 +57,7 @@ alias vim='vim -p'
 alias githash='git rev-parse --short HEAD'
 
 # ASF
-alias gohugeslice='cd /hugeslice/rtc/jhkennedy'
+alias gowork='cd /asfn/daac_scratch/rtc/jhkennedy'
 alias gotmp='cd /tmp/jhkennedy'
 ###############################################################################
 # Path Exports
