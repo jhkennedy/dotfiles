@@ -77,3 +77,12 @@ export PATH=${PATH}:${HOME}/.local/bin
 # Github authentication
 ###############################################################################
 export GPG_TTY=$(tty)
+
+
+###############################################################################
+# Because not all ASF machines have zsh, and they don't share $HOME, place this
+# in .profile to use zsh on that machine. 
+###############################################################################
+# export SHELL=`which zsh`
+# [ -z "$ZSH_VERSION" ] && exec "$SHELL" -l
+
