@@ -46,7 +46,7 @@ sudo apt-get install -y mercurial
 sudo apt-get install -y pandoc lynx
 sudo apt-get install -y colordiff
 sudo apt-get install -y valgrind
-sudo apt-get install -y meld
+sudo apt-get install -y meld appmenu-gtk2-module appmenu-gtk3-module
 
 # Zsh stuff
 # -----------
