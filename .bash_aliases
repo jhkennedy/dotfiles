@@ -172,7 +172,7 @@ alias goanvil='ssh -Y -l kennedy blues.lcrc.anl.gov'
 alias goacme1='ssh -Y -l kennedy52 acme1.llnl.gov'
 
 # ASF Systems
-alias godev6='ssh -Y apd-dev6.asf.alaska.edu'
+alias goapd='ssh -A apd-dev6.asf.alaska.edu'
 
 ###############################################################################
 # Path Exports
