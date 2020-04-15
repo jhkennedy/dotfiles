@@ -18,7 +18,7 @@
 [core]
     autocrlf = input
     whitespace = trailing-space
-	excludesfile = /home/jhkennedy/.gitignore_global
+	excludesfile = /asfn/home/jhkennedy/.gitignore_global
 	editor = vim
     trustctime = false
     pager = less -F -X 

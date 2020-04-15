@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/jhkennedy/.oh-my-zsh"
+export ZSH="/asfn/home/jhkennedy/.oh-my-zsh"
 
 # Disable Oh My Zsh! check for updates
 DISABLE_AUTO_UPDATE="true"
