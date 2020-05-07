@@ -39,10 +39,6 @@ function howtee () {
     echo "((II++)); command > >(tee -a ${1}_\${II}.out) 2> >(tee -a ${1}_\${II}.err >&2)"
 }
 
-function goami () {
-    echo "ssh -i ${HOME}/.ssh/${2:-jhkennedy.pem} ${3:-ubuntu}@${1}"
-    eval "ssh -i ${HOME}/.ssh/${2:-jhkennedy.pem} ${3:-ubuntu}@${1}"
-}
 ###############################################################################
 # Aliases
 ###############################################################################
@@ -89,14 +85,9 @@ alias goanvil='ssh -Y -l kennedy blues.lcrc.anl.gov'
 # LLNL Systems
 alias goacme1='ssh -Y -l kennedy52 acme1.llnl.gov'
 
-# ASF Systems
-alias goapd='ssh -A apd-dev6.asf.alaska.edu'
-
 ###############################################################################
-# Path Exports
+# Path, Envs, and Fixers
 ###############################################################################
-
-
 # Conda 4.4+ reccomended way of enabling conda in bash
 . $HOME/miniconda3/etc/profile.d/conda.sh
 # BECUASE CONDA IS STUPID!!! See: https://github.com/AnacondaRecipes/aggregate/issues/151
@@ -108,7 +99,21 @@ export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
 # add .local/bin to path
 export PATH=${PATH}:${HOME}/.local/bin
 
-###############################################################################
 # Github authentication
-###############################################################################
 export GPG_TTY=$(tty)
+
+###############################################################################
+# ASF APD/TOOLS
+###############################################################################
+export AWS_PROFILE=hyp3-full-access
+export S3_PYPI_HOST=hyp3-pypi.s3-website-us-east-1.amazonaws.com
+export HYP3_REGISTRY=626226570674.dkr.ecr.us-east-1.amazonaws.com
+
+# ASF Systems
+alias goapd='ssh -A apd-dev6.asf.alaska.edu'
+
+function goami () {
+    echo "ssh -i ${HOME}/.ssh/${2:-jhkennedy.pem} ${3:-ubuntu}@${1}"
+    eval "ssh -i ${HOME}/.ssh/${2:-jhkennedy.pem} ${3:-ubuntu}@${1}"
+}
+
