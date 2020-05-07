@@ -1,6 +1,3 @@
-# grey background for the command prompt
-#export PS1="\e[44m\u@\h \w$ \e[m"
-
 ###############################################################################
 # Useful functions
 ###############################################################################
@@ -11,24 +8,7 @@ if [ ! -z "$ZSH_NAME" ]; then
     bashcompinit
 fi
 
-# function to run a command quietly
-function nullit () {
-	"$1" "$2" 2>/dev/null &
-}
-
-# function to view markdown in the console
-function mdo () {
-    pandoc "$1" -f markdown_github -t html | lynx -stdin
-}
-complete -f -o plusdirs -X '!*.md' mdo
-
-# function to view reStructuredText in the console
-function rsto () {
-    pandoc "$1" -f rst -t html | lynx -stdin
-}
-complete -f -o plusdirs -X '!*.rst' rsto
-
-# funtion to make a directory and move into it
+# function to make a directory and move into it
 function gomkdir () {
     mkdir "$1" && cd "$1"
 }
@@ -59,6 +39,7 @@ alias githash='git rev-parse --short HEAD'
 # ASF
 alias gowork='cd /asfn/daac_scratch/rtc/jhkennedy'
 alias gotmp='cd /tmp/jhkennedy'
+
 ###############################################################################
 # Path Exports
 ###############################################################################
@@ -77,12 +58,4 @@ export PATH=${PATH}:${HOME}/.local/bin
 # Github authentication
 ###############################################################################
 export GPG_TTY=$(tty)
-
-
-###############################################################################
-# Because not all ASF machines have zsh, and they don't share $HOME, place this
-# in .profile to use zsh on that machine. 
-###############################################################################
-# export SHELL=`which zsh`
-# [ -z "$ZSH_VERSION" ] && exec "$SHELL" -l
 
