@@ -51,6 +51,8 @@ alias act='conda deactivate && conda activate'
 alias pytree='tree -I __pycache__'
 #alias findcodelines='find ./ -iname "*.py" | xargs wc -l'
 
+alias killpycharm='ps -eo command |  awk '\''{ print $1 }'\'' | grep java | xargs killall'
+
 # General
 alias vim='vim -p'
 alias githash='git rev-parse --short HEAD'
