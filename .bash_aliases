@@ -14,6 +14,12 @@ function pdfo () {
 }
 complete -f -o plusdirs -X '!*.pdf' pdfo
 
+# function to view markdown in the console
+function mdo () {
+    pandoc "$1" -f markdown_github -t html | lynx -stdin
+}
+complete -f -o plusdirs -X '!*.md' mdo
+
 # function to make a directory and move into it
 function gomkdir () {
     mkdir "$1" && cd "$1"
