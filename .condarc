@@ -1,7 +1,9 @@
 channels:
   - conda-forge
   - defaults
+
 channel_priority: strict
+
 create_default_packages:
   - ipython
   - notebook
