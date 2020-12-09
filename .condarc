@@ -4,4 +4,5 @@ channels:
 channel_priority: strict
 create_default_packages:
   - ipython
+  - notebook
 
