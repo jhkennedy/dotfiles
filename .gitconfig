@@ -12,6 +12,7 @@
     up = fetch --all -p
     ff = pull --ff-only
     subup = !git submodule sync && git submodule update --init
+    dev = !git switch develop && git up && git ff
 [merge]
     summary = true
     ff = false
