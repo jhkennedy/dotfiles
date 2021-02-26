@@ -114,10 +114,6 @@ export GPG_TTY=$(tty)
 ###############################################################################
 # ASF APD/TOOLS
 ###############################################################################
-export AWS_PROFILE=hyp3-full-access
-export S3_PYPI_HOST=hyp3-pypi.s3-website-us-east-1.amazonaws.com
-export HYP3_REGISTRY=626226570674.dkr.ecr.us-east-1.amazonaws.com
-
 # ASF Systems
 alias goapd='ssh -A apd-dev6.asf.alaska.edu'
 
