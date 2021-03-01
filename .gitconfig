@@ -1,7 +1,7 @@
 [user]
 	name = Joseph H Kennedy
 	email = me@jhkennedy.org
-	signingkey = 309C7CF5259225D4
+	signingkey = 2CDDD4B040432BDB
 [push]
 	default = simple
 [ui]
@@ -18,19 +18,10 @@
 [core]
     autocrlf = input
     whitespace = trailing-space
-	excludesfile = /asfn/home/jhkennedy/.gitignore_global
+	excludesfile = /home/jovyan/.gitignore_global
 	editor = vim
     trustctime = false
     pager = less -F -X 
-[diff]
-	tool = meld
-[difftool]
-	prompt = false
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
 [commit]
 	gpgsign = true
 [gpg]

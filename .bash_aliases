@@ -15,11 +15,11 @@ function gomkdir () {
 
 # functions to remember things
 function howtee () {
-    echo "command > >(tee -a command.out) 2> >(tee -a command.err >&2)"
+    echo "command > >(tee -a $1.out) 2> >(tee -a $1.err >&2)"
     echo "see: https://stackoverflow.com/questions/692000"
     echo ""
     echo "To incriment:"
-    echo '((t_i++)); command > >(tee -a command_${t_i}.out) 2> >(tee -a command_${t_i}.err >&2)'
+    echo "((II++)); command > >(tee -a ${1}_${II}.out) 2> >(tee -a ${1}_${II}.err >&2)"
 }
 
 ###############################################################################
@@ -40,7 +40,7 @@ alias githash='git rev-parse --short HEAD'
 # Path, Envs, and Fixers
 ###############################################################################
 # Conda 4.4+ reccomended way of enabling conda in bash
-. $HOME/miniconda3/etc/profile.d/conda.sh
+. /opt/conda/etc/profile.d/conda.sh
 # BECUASE CONDA IS STUPID!!! See: https://github.com/AnacondaRecipes/aggregate/issues/151
 alias fixhost='export HOST=$(hostname)'
 
@@ -56,14 +56,6 @@ export GPG_TTY=$(tty)
 ###############################################################################
 # ASF APD/TOOLS
 ###############################################################################
-export AWS_PROFILE=hyp3-full-access
-export S3_PYPI_HOST=hyp3-pypi.s3-website-us-east-1.amazonaws.com
-export HYP3_REGISTRY=626226570674.dkr.ecr.us-east-1.amazonaws.com
-
-# ASF
-alias gowork='cd /asfn/daac_scratch/rtc/jhkennedy'
-alias gotmp='cd /tmp/jhkennedy'
-
 function goami () {
     echo "ssh -i ${HOME}/.ssh/${2:-jhkennedy.pem} ${3:-ubuntu}@${1}"
     eval "ssh -i ${HOME}/.ssh/${2:-jhkennedy.pem} ${3:-ubuntu}@${1}"
