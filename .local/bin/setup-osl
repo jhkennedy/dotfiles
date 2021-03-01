@@ -1,0 +1,13 @@
+sudo apt install gnupg2 openssh-client
+
+chmod 600  ~/.ssh/id_ed25519
+chmod 700  ~/.ssh
+chmod 744  ~/.ssh/id_ed25519.pub
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+fc-cache -f -v .local/share/fonts/adobe-fonts/source-code-pro/
+
+. ~/.bash_profile
+
