@@ -97,8 +97,21 @@ alias goacme1='ssh -Y -l kennedy52 acme1.llnl.gov'
 ###############################################################################
 # Path, Envs, and Fixers
 ###############################################################################
-# Conda 4.4+ reccomended way of enabling conda in bash
-. $HOME/miniconda3/etc/profile.d/conda.sh
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jhkennedy/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jhkennedy/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/jhkennedy/mambaforge/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/jhkennedy/mambaforge/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 # BECUASE CONDA IS STUPID!!! See: https://github.com/AnacondaRecipes/aggregate/issues/151
 alias fixhost='export HOST=$(hostname)'
 
@@ -108,7 +121,7 @@ export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
 # add .local/bin to path
 export PATH=${PATH}:${HOME}/.local/bin
 
-# Github authentication
+# GitHub authentication
 export GPG_TTY=$(tty)
 
 ###############################################################################

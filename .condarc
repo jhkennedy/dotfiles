@@ -7,3 +7,5 @@ channel_priority: strict
 create_default_packages:
   - jupyter
 
+auto_activate_base: false
+
