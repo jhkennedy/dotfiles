@@ -1,0 +1,217 @@
+#!/bin/bash
+# -----------------------------------------------------------------------------
+# FOR: Pop!_OS 21.04 on a Dell XPS15
+# -----------------------------------------------------------------------------
+# script to install all the extra stuff I like in ~~Ubuntu~~ Pop!. When java
+# installs, you will need to accept the UELA. You may need to approve changes
+# from time to time (-y should take care of that). Make sure to read through
+# this list and comment out lines you do not want with a '#'. If it ever says
+# that it can't find a package, that whole line will not go, so delete that
+# package from line, and then re-run the script (it will not hurt to run this
+# more than once).
+# -----------------------------------------------------------------------------
+
+
+# proxy connections with ssh
+# --------------------------
+# sudo apt install -y corkscrew
+
+# Ubuntu stuff
+# ------------
+# sudo apt install -y ppa-purge
+
+# to be able to see windows partitions
+# ------------------------------------
+#sudo apt install -y ntfs-config # to see windows drive
+
+# Media stuff
+# -----------
+sudo apt install -y ubuntu-restricted-addons ubuntu-restricted-extras
+# flameshot screenshot editor
+sudo apt install -y flameshot
+
+# prorgraming stuff
+# -----------------
+# sudo apt install -y tmux
+sudo apt install -y build-essential vim cmake cmake-curses-gui
+# make gvim defualt text editor -- edit to suit your preferences. 
+#sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list 
+# sudo apt install -y gedit-plugins doxygen
+sudo apt install -y git git-doc 
+# git LFS
+ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+ sudo apt install -y git-lfs
+# sudo apt install -y bzr bzr-doc
+# sudo apt install -y mercurial 
+sudo apt install -y pandoc
+sudo apt install -y colordiff
+# sudo apt install -y valgrind
+# sudo apt install -y meld appmenu-gtk2-module appmenu-gtk3-module
+
+# Zsh stuff
+# -----------
+sudo apt install -y zsh powerline fonts-powerline
+
+# Fortran
+# -------
+sudo apt install -y gfortran
+
+# C++ Libraries
+# -------------
+# boost libraries: http://www.boost.org/ 
+sudo apt install -y libboost-all-dev libboost-doc
+# CGAL libraries: http://doc.cgal.org/
+sudo apt install -y libcgal-dev
+
+# Science stuff
+# -------------
+# units is a command line unit converter
+# sudo apt install -y gnuplot units graphviz
+# sudo apt install -y gdal-bin
+# sudo apt install -y libgdal-dev libfftw3-dev libpcre3-dev graphicsmagick subversion
+# sudo apt install -y ncl-ncarg ferret-vis libbz2-dev libcairo2-dev xorg-dev
+# sudo apt install -y octave
+sudo apt install -y texlive-full bibtex2html latexdiff diffpdf
+# for digitizing plots
+# sudo apt install -y engauge-digitizer 
+sudo apt install -y libhdf5-dev hdf5-tools hdf5-helpers flex
+sudo apt install -y libnetcdf-dev libnetcdff-dev netcdf-bin netcdf-doc nco ncview
+sudo apt install -y libblas-dev
+sudo apt install -y openmpi-bin libopenmpi-dev
+sudo apt install -y liblapack-dev
+
+wget -qO- https://github.com/retorquere/zotero-deb/releases/download/apt-get/install.sh | sudo bash
+sudo apt update
+sudo apt install zotero
+
+# File stuff
+# ----------
+# see tree structure of subdirectories in terminal
+sudo apt install -y tree
+# file extraction
+sudo apt install -y p7zip-full
+# file sync program
+sudo apt install -y unison unison-gtk
+# cross platform FTP client 
+# sudo apt install -y filezilla 
+# disk utility
+# sudo apt install -y gparted 
+
+# Image stuff
+# -----------
+# gimp -> photoshop, 
+# inkscape -> illustrator, 
+# xournal -> annotates pdfs, 
+# icoutils -> .ico creator
+sudo apt install -y gimp inkscape xournal icoutils
+
+# Video Editor:
+# -------------
+# sudo apt install -y openshot
+
+# java
+# ----
+sudo apt install -y default-jdk 
+
+# debian configuration tools
+# --------------------------
+# This is how you change the gedit-terminal colors! 
+#FIXME: sudo apt install -y dconf-tools gconf-editor
+
+# Gnome settings and tweaks
+# sudo apt install -y gnome-tweaks
+
+# Keychain to hold RSA keys in memory
+sudo apt install -y keychain
+
+# Snaps
+sudo apt install -y snapd
+sudo snap install pycharm-professional --classic
+sudo snap install slack --classic
+sudo snap install discord
+sudo snap install mattermost-desktop --beta
+sudo snap install spotify
+sudo snap install signal-desktop
+
+# Gnome shell exensions
+# ---------------------
+sudo apt install -y chrome-gnome-shell
+# for system-monitor
+sudo apt install -y gir1.2-gtop-2.0 gir1.2-nm-1.0 gir1.2-clutter-1.0
+
+
+# GMT Generic Mapping tools -- build from source
+#     download source using:
+#     svn checkout svn://gmtserver.soest.hawaii.edu/gmt5/trunk gmt5-dev
+#     then follow build instructions
+
+# CISM Dependencies
+# -----------------
+# Will need Trilinos
+#     install from http://trilinos.org/
+#     this will take a lot of time to build. Seriously. 
+#     use CISM documentation to install.
+
+
+# -----------------------------------------------------------------------------
+# Clean up
+# -----------------------------------------------------------------------------
+sudo apt autoremove
+
+# Set up windows partition support
+# --------------------------------
+# sudo ntfs-config 
+
+# -----------------------------------------------------------------------------
+# Software to build (see notes above):
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Other things to Install:
+# -----------------------------------------------------------------------------
+# Chrome                    x
+# Git-LFS                   x
+# Git Secrets               x
+# Mamaba                    x
+# extensions.gnome.org/     x
+#     open weather          x
+#     system-monitor        x
+#     AppindIcator Support  ?
+# github.com/karan/joe      x
+# docker                    x <-- could be added to script next round!
+
+# -----------------------------------------------------------------------------
+# To configure after install:
+# -----------------------------------------------------------------------------
+# dotfiles.git              x <-- see notes below
+# Zotero                    x
+# Chrome                    x
+# extensions.gnome.org/     x
+# Pycharm                   x <-- should probably automate this... 
+# Slack                     x
+# Discord                   x
+# MatterMost                x 
+# Gitter                    x 
+# Signal                    x
+# Spotify                   x
+
+# -----------------------------------------------------------------------------
+# NOTES: 
+# -----------------------------------------------------------------------------
+# dotfiles.git setup
+# Normal git clone commands for the dotfiles.git repository will fail because you will be cloning into a non-empty
+# directory. In order to clone the repository you will need to:
+  # cd ~
+  # git init
+  # git remote add origin https://github.com/jhkennedy/dotfiles.git 
+  # git fetch
+  # git checkout -t -f origin/ASF
+  # git reset --hard HEAD
+  # git remote set-url origin git@github.com:jhkennedy/dotfiles.git
+# WARNING: this will wipe any current information in the tracked files. BE SURE THIS IS WHAT YOU WANT TO DO.
+#
+# Add the source code pro font to the fc-cache
+  # fc-cache -f -v .local/share/fonts/adobe-fonts/source-code-pro/ 
+#
+# Now, setup LFS support
+  # git lfs install
