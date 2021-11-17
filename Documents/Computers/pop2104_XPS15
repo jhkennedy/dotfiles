@@ -11,6 +11,18 @@
 # more than once).
 # -----------------------------------------------------------------------------
 
+# Drop-down terminal
+--------------------
+sudo apt install -y guake
+# Or sudo snap install guake --edge
+
+# VPN stuff
+-----------
+apt update && apt -y install ca-certificates wget net-tools gnupg
+wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg | apt-key add -
+echo "deb http://as-repository.openvpn.net/as/debian focal main">/etc/apt/sources.list.d/openvpn-as-repo.list
+apt update && apt -y install openvpn-as openvpn network-manager-openvpn-gnome
+sudo apt install -y openconnect network-manager-openconnect network-manager-openconnect-gnome
 
 # proxy connections with ssh
 # --------------------------
