@@ -65,6 +65,8 @@ alias pytree='tree -I __pycache__'
 alias killpycharm='ps -eo command |  awk '\''{ print $1 }'\'' | grep java | xargs killall'
 alias diffcharm='pycharm-professional diff'
 
+alias killforti='sudo systemctl stop forticlient'
+
 # General
 alias vim='vim -p'
 alias githash='git rev-parse --short HEAD'
