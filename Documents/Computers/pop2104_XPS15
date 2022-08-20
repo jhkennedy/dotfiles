@@ -46,19 +46,20 @@ sudo apt install -y flameshot
 # -----------------
 # sudo apt install -y tmux
 sudo apt install -y build-essential vim cmake cmake-curses-gui
-# make gvim defualt text editor -- edit to suit your preferences. 
-#sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list 
+# make gvim defualt text editor -- edit to suit your preferences.
+#sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list
 # sudo apt install -y gedit-plugins doxygen
-sudo apt install -y git git-doc 
+sudo apt install -y git git-doc
 # git LFS
  curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
  sudo apt install -y git-lfs
 # sudo apt install -y bzr bzr-doc
-# sudo apt install -y mercurial 
+# sudo apt install -y mercurial
 sudo apt install -y pandoc
 sudo apt install -y colordiff
 # sudo apt install -y valgrind
 # sudo apt install -y meld appmenu-gtk2-module appmenu-gtk3-module
+sudo apt install -y jq
 
 # Zsh stuff
 # -----------
@@ -70,7 +71,7 @@ sudo apt install -y gfortran
 
 # C++ Libraries
 # -------------
-# boost libraries: http://www.boost.org/ 
+# boost libraries: http://www.boost.org/
 sudo apt install -y libboost-all-dev libboost-doc
 # CGAL libraries: http://doc.cgal.org/
 sudo apt install -y libcgal-dev
@@ -85,7 +86,7 @@ sudo apt install -y libcgal-dev
 # sudo apt install -y octave
 sudo apt install -y texlive-full bibtex2html latexdiff diffpdf
 # for digitizing plots
-# sudo apt install -y engauge-digitizer 
+# sudo apt install -y engauge-digitizer
 sudo apt install -y libhdf5-dev hdf5-tools hdf5-helpers flex
 sudo apt install -y libnetcdf-dev libnetcdff-dev netcdf-bin netcdf-doc nco ncview
 sudo apt install -y libblas-dev
@@ -104,16 +105,16 @@ sudo apt install -y tree
 sudo apt install -y p7zip-full
 # file sync program
 sudo apt install -y unison unison-gtk
-# cross platform FTP client 
-# sudo apt install -y filezilla 
+# cross platform FTP client
+# sudo apt install -y filezilla
 # disk utility
-# sudo apt install -y gparted 
+# sudo apt install -y gparted
 
 # Image stuff
 # -----------
-# gimp -> photoshop, 
-# inkscape -> illustrator, 
-# xournal -> annotates pdfs, 
+# gimp -> photoshop,
+# inkscape -> illustrator,
+# xournal -> annotates pdfs,
 # icoutils -> .ico creator
 sudo apt install -y gimp inkscape xournal icoutils
 
@@ -123,11 +124,11 @@ sudo apt install -y gimp inkscape xournal icoutils
 
 # java
 # ----
-sudo apt install -y default-jdk 
+sudo apt install -y default-jdk
 
 # debian configuration tools
 # --------------------------
-# This is how you change the gedit-terminal colors! 
+# This is how you change the gedit-terminal colors!
 #FIXME: sudo apt install -y dconf-tools gconf-editor
 
 # Gnome settings and tweaks
@@ -141,7 +142,7 @@ sudo apt install -y snapd
 sudo snap install pycharm-professional --classic
 sudo snap install slack --classic
 sudo snap install discord
-sudo snap install mattermost-desktop --beta
+sudo snap install mattermost-desktop
 sudo snap install spotify
 sudo snap install signal-desktop
 
@@ -161,7 +162,7 @@ sudo apt install -y gir1.2-gtop-2.0 gir1.2-nm-1.0 gir1.2-clutter-1.0
 # -----------------
 # Will need Trilinos
 #     install from http://trilinos.org/
-#     this will take a lot of time to build. Seriously. 
+#     this will take a lot of time to build. Seriously.
 #     use CISM documentation to install.
 
 
@@ -172,7 +173,7 @@ sudo apt autoremove
 
 # Set up windows partition support
 # --------------------------------
-# sudo ntfs-config 
+# sudo ntfs-config
 
 # -----------------------------------------------------------------------------
 # Software to build (see notes above):
@@ -199,23 +200,23 @@ sudo apt autoremove
 # Zotero                    x
 # Chrome                    x
 # extensions.gnome.org/     x
-# Pycharm                   x <-- should probably automate this... 
+# Pycharm                   x <-- should probably automate this...
 # Slack                     x
 # Discord                   x
-# MatterMost                x 
-# Gitter                    x 
+# MatterMost                x
+# Gitter                    x
 # Signal                    x
 # Spotify                   x
 
 # -----------------------------------------------------------------------------
-# NOTES: 
+# NOTES:
 # -----------------------------------------------------------------------------
 # dotfiles.git setup
 # Normal git clone commands for the dotfiles.git repository will fail because you will be cloning into a non-empty
 # directory. In order to clone the repository you will need to:
   # cd ~
   # git init
-  # git remote add origin https://github.com/jhkennedy/dotfiles.git 
+  # git remote add origin https://github.com/jhkennedy/dotfiles.git
   # git fetch
   # git checkout -t -f origin/ASF
   # git reset --hard HEAD
@@ -223,7 +224,7 @@ sudo apt autoremove
 # WARNING: this will wipe any current information in the tracked files. BE SURE THIS IS WHAT YOU WANT TO DO.
 #
 # Add the source code pro font to the fc-cache
-  # fc-cache -f -v .local/share/fonts/adobe-fonts/source-code-pro/ 
+  # fc-cache -f -v .local/share/fonts/adobe-fonts/source-code-pro/
 #
 # Now, setup LFS support
   # git lfs install
