@@ -45,6 +45,11 @@ function howtee () {
     echo "((II++)); command > >(tee -a ${1}_\${II}.out) 2> >(tee -a ${1}_\${II}.err >&2)"
 }
 
+# Function to create gitignore files
+function gi () {
+    curl -sL https://www.toptal.com/developers/gitignore/api/$@
+}
+
 ###############################################################################
 # Aliases
 ###############################################################################
