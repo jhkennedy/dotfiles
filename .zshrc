@@ -13,6 +13,7 @@ DISABLE_AUTO_UPDATE="true"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(anaconda context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+# POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
@@ -105,3 +106,4 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
