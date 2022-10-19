@@ -43,3 +43,4 @@
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [init]
 	templateDir = /home/jhkennedy/.git-templates/git-secrets
+	defaultBranch = main
