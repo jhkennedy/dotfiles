@@ -104,26 +104,24 @@ alias goacme1='ssh -Y -l kennedy52 acme1.llnl.gov'
 ###############################################################################
 # Path, Envs, and Fixers
 ###############################################################################
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="/home/jhkennedy/.local/bin/micromamba";
-export MAMBA_ROOT_PREFIX="/home/jhkennedy/micromamba";
-__mamba_setup="$('/home/jhkennedy/.local/bin/micromamba' shell hook --shell zsh --prefix '/home/jhkennedy/micromamba' 2> /dev/null)"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jhkennedy/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
+    eval "$__conda_setup"
 else
-    if [ -f "/home/jhkennedy/micromamba/etc/profile.d/micromamba.sh" ]; then
-        . "/home/jhkennedy/micromamba/etc/profile.d/micromamba.sh"
+    if [ -f "/home/jhkennedy/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/jhkennedy/mambaforge/etc/profile.d/conda.sh"
     else
-        export  PATH="/home/jhkennedy/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
+        export PATH="/home/jhkennedy/mambaforge/bin:$PATH"
     fi
 fi
-unset __mamba_setup
-# <<< mamba initialize <<<
+unset __conda_setup
 
-# Fix muscle memory
-alias mamba='micromamba'
-alias conda='micromamba'
+if [ -f "/home/jhkennedy/mambaforge/etc/profile.d/mamba.sh" ]; then
+    . "/home/jhkennedy/mambaforge/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
 
 # FIX GLib-GIO memory message: https://github.com/conda-forge/glib-feedstock/issues/19 
 export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
