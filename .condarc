@@ -1,11 +1,7 @@
 channels:
   - conda-forge
-  - defaults
+  - nodefaults
 
-channel_priority: strict
-
-create_default_packages:
-  - jupyter
+channel_priority: flexible
 
 auto_activate_base: false
-
