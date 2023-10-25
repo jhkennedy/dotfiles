@@ -47,7 +47,7 @@ sudo apt install -y build-essential vim cmake cmake-curses-gui
 # make gvim defualt text editor -- edit to suit your preferences.
 #sudo sed -i 's/gedit.desktop/gvim.desktop/g' /etc/gnome/defaults.list
 # sudo apt install -y gedit-plugins doxygen
-sudo apt install -y git git-doc
+sudo apt install -y git git-doc git-filter-repo
 # git LFS
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 sudo apt install -y git-lfs
