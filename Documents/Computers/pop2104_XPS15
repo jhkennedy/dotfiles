@@ -184,7 +184,6 @@ sudo apt autoremove
 # -----------------------------------------------------------------------------
 # Chrome                    x
 # Git-LFS                   x
-# Git Secrets               x
 # Mamaba                    x
 # extensions.gnome.org/     x
 #     open weather          x

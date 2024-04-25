@@ -181,7 +181,6 @@ sudo apt autoremove
 # Other things to Install:
 # -----------------------------------------------------------------------------
 # Git-LFS                        x
-# Git Secrets                    x
 # Mamaba                         -
 # https://extensions.gnome.org/  x
 #     open weather               x
