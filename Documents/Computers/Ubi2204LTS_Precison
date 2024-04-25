@@ -16,6 +16,10 @@
 sudo apt install -y guake
 # Or sudo snap install guake --edge
 
+# NASA PIV stuff
+# --------------
+sudo apt install opensc-pkcs11 pcscd
+
 # VPN stuff
 # -----------
 apt update && apt -y install ca-certificates curl wget net-tools gnupg
