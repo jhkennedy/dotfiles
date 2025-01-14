@@ -106,20 +106,20 @@ alias goacme1='ssh -Y -l kennedy52 acme1.llnl.gov'
 ###############################################################################
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jhkennedy/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/jhkennedy/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/jhkennedy/mambaforge/etc/profile.d/conda.sh" ]; then
-        . "/home/jhkennedy/mambaforge/etc/profile.d/conda.sh"
+    if [ -f "/home/jhkennedy/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/jhkennedy/miniforge3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/jhkennedy/mambaforge/bin:$PATH"
+        export PATH="/home/jhkennedy/miniforge3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 
-if [ -f "/home/jhkennedy/mambaforge/etc/profile.d/mamba.sh" ]; then
-    . "/home/jhkennedy/mambaforge/etc/profile.d/mamba.sh"
+if [ -f "/home/jhkennedy/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "/home/jhkennedy/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
 
