@@ -106,3 +106,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+export PATH="/home/jhkennedy/.pixi/bin:$PATH"
+eval "$(pixi completion --shell zsh)"
+
