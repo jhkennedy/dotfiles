@@ -13,6 +13,7 @@
     ff = pull --ff-only
     subup = !git submodule sync && git submodule update --init
     dev = !git switch develop && git up && git ff
+    ma = !git switch main && git up && git ff
 [merge]
     summary = true
     ff = false
@@ -37,3 +38,14 @@
     gpgsign = true
 [init]
     defaultBranch = main
+[diff "jupyternotebook"]
+    command = git-nbdiffdriver diff
+[merge "jupyternotebook"]
+    driver = git-nbmergedriver merge %O %A %B %L %P
+    name = jupyter notebook merge driver
+[difftool "nbdime"]
+    cmd = git-nbdifftool diff \"$LOCAL\" \"$REMOTE\" \"$BASE\"
+[mergetool "nbdime"]
+    cmd = git-nbmergetool merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool]
+    prompt = false
