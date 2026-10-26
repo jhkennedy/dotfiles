@@ -1,0 +1,29 @@
+# Unison preferences
+label = ASF laptop
+root = /home/jhkennedy
+root = /media/jhkennedy/ASF/jhkennedy
+
+# cread a common file to add any added prefs to (from gui)
+addprefsto = ASF Backup.gui
+
+ignore = Path .aws/cli/cache/*
+ignore = Path .cache/*
+ignore = Path .config/*
+ignore = Path .cookiecutter/*
+ignore = Path .docker/*
+ignore = Path .ipython/*
+ignore = Path .java/*
+ignore = Path .jupyter/*
+ignore = Path .local/share/*
+ignore = Path .mozilla/*
+ignore = Path .npm/*
+ignore = Path .thunderbird/*
+ignore = Path .zoom/*
+ignore = Path micromamba/*
+ignore = Path mambaforge/*
+ignore = Path miniforge3/*
+ignore = Path snap/*
+ignore = Path unison.log
+ignore = Path .unison/*
+ignorenot = Path .unison/*.prf
+ignorenot = Path .unison/*.gui
